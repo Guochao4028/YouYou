@@ -22,6 +22,7 @@
 		EF0422AE21EDF4B4008A8FF9 /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0422AD21EDF4B4008A8FF9 /* ClassifyViewController.m */; };
 		EF0422B221EDF4ED008A8FF9 /* RemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0422B121EDF4ED008A8FF9 /* RemindViewController.m */; };
 		EF0422B621EDF515008A8FF9 /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0422B521EDF515008A8FF9 /* SetupViewController.m */; };
+		EF0422BA21EF06EF008A8FF9 /* YYPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0422B921EF06EF008A8FF9 /* YYPlayManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		EF0422B121EDF4ED008A8FF9 /* RemindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemindViewController.m; sourceTree = "<group>"; };
 		EF0422B421EDF515008A8FF9 /* SetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
 		EF0422B521EDF515008A8FF9 /* SetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
+		EF0422B821EF06EF008A8FF9 /* YYPlayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYPlayManager.h; sourceTree = "<group>"; };
+		EF0422B921EF06EF008A8FF9 /* YYPlayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYPlayManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +212,8 @@
 		EF0422B721EF058B008A8FF9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EF0422B821EF06EF008A8FF9 /* YYPlayManager.h */,
+				EF0422B921EF06EF008A8FF9 /* YYPlayManager.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 				EF04227021EDF072008A8FF9 /* ViewController.m in Sources */,
 				EF04227E21EDF079008A8FF9 /* main.m in Sources */,
 				EF04226D21EDF072008A8FF9 /* AppDelegate.m in Sources */,
+				EF0422BA21EF06EF008A8FF9 /* YYPlayManager.m in Sources */,
 				EF0422B621EDF515008A8FF9 /* SetupViewController.m in Sources */,
 				EF0422A521EDF39A008A8FF9 /* RootViewController.m in Sources */,
 			);
