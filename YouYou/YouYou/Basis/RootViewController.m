@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initTabbar];
+    
+    [YYPlayManager sharedInstance];
 }
 
 #pragma mark - private

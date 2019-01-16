@@ -74,6 +74,7 @@
 		EF0422B521EDF515008A8FF9 /* SetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
 		EF0422B821EF06EF008A8FF9 /* YYPlayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYPlayManager.h; sourceTree = "<group>"; };
 		EF0422B921EF06EF008A8FF9 /* YYPlayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYPlayManager.m; sourceTree = "<group>"; };
+		EF0422BB21EF0B7C008A8FF9 /* ayl-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ayl-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +213,7 @@
 		EF0422B721EF058B008A8FF9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EF0422BB21EF0B7C008A8FF9 /* ayl-Prefix.pch */,
 				EF0422B821EF06EF008A8FF9 /* YYPlayManager.h */,
 				EF0422B921EF06EF008A8FF9 /* YYPlayManager.m */,
 			);
@@ -530,6 +532,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YouYou/Common/ayl-Prefix.pch";
 				INFOPLIST_FILE = YouYou/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -546,6 +550,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YouYou/Common/ayl-Prefix.pch";
 				INFOPLIST_FILE = YouYou/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
