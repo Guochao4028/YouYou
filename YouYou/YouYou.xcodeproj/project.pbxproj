@@ -107,6 +107,7 @@
 		EF04242A21EF1F88008A8FF9 /* SDWebImageImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0423D321EF1F87008A8FF9 /* SDWebImageImageIOCoder.m */; };
 		EF04242B21EF1F88008A8FF9 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0423D721EF1F87008A8FF9 /* UIButton+WebCache.m */; };
 		EF04242C21EF1F88008A8FF9 /* SDWebImageWebPCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0423D821EF1F87008A8FF9 /* SDWebImageWebPCoder.m */; };
+		EFC8E45C21EF3BA1007D5117 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E45B21EF3BA1007D5117 /* DataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -331,6 +332,10 @@
 		EF0423D721EF1F87008A8FF9 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		EF0423D821EF1F87008A8FF9 /* SDWebImageWebPCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageWebPCoder.m; sourceTree = "<group>"; };
 		EF0423D921EF1F87008A8FF9 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		EFC8E45A21EF3BA1007D5117 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		EFC8E45B21EF3BA1007D5117 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		EFC8E45D21EF3C48007D5117 /* DefineBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineBlocks.h; sourceTree = "<group>"; };
+		EFC8E45F21EF3CAC007D5117 /* DefinedURLs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefinedURLs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,11 +475,15 @@
 		EF0422B721EF058B008A8FF9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EF0422BD21EF19C9008A8FF9 /* api */,
+				EFC8E45F21EF3CAC007D5117 /* DefinedURLs.h */,
+				EF0422BC21EF0D0B008A8FF9 /* DefinedKeys.h */,
+				EFC8E45D21EF3C48007D5117 /* DefineBlocks.h */,
 				EF0422BB21EF0B7C008A8FF9 /* ayl-Prefix.pch */,
 				EF0422B821EF06EF008A8FF9 /* YYPlayManager.h */,
 				EF0422B921EF06EF008A8FF9 /* YYPlayManager.m */,
-				EF0422BC21EF0D0B008A8FF9 /* DefinedKeys.h */,
-				EF0422BD21EF19C9008A8FF9 /* api */,
+				EFC8E45A21EF3BA1007D5117 /* DataManager.h */,
+				EFC8E45B21EF3BA1007D5117 /* DataManager.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -915,6 +924,7 @@
 				EF0423EB21EF1F88008A8FF9 /* MJRefreshBackStateFooter.m in Sources */,
 				EF04241621EF1F88008A8FF9 /* SDWebImageCodersManager.m in Sources */,
 				EF0423E121EF1F88008A8FF9 /* NSString+MJExtension.m in Sources */,
+				EFC8E45C21EF3BA1007D5117 /* DataManager.m in Sources */,
 				EF04240121EF1F88008A8FF9 /* AFHTTPRequestOperationManager.m in Sources */,
 				EF04240621EF1F88008A8FF9 /* UIAlertView+AFNetworking.m in Sources */,
 				EF04241F21EF1F88008A8FF9 /* SDAnimatedImageRep.m in Sources */,

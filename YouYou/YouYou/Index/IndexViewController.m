@@ -12,14 +12,16 @@
 
 @property(nonatomic, strong)UITableView *tableView;
 
+@property(nonatomic, strong)NSMutableArray *dataList;
+
 @end
 
 @implementation IndexViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self initUI];
+    [self initData];
 }
 
 #pragma mark - private
@@ -27,9 +29,13 @@
     [self.view addSubview:self.tableView];
 }
 
+-(void)initData{
+    
+}
+
 #pragma mark - UITableViewDelegate && UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return self.dataList.count;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -49,11 +55,6 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-//    NSString *titleStr = self.titleArray[indexPath.row];
-//    ListViewController *listVC = [[ListViewController alloc]init];
-//    [listVC setTitleString:titleStr];
-//    listVC.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:listVC animated:YES];
 }
 
 
@@ -64,13 +65,23 @@
         
         CGFloat tabelViewH = ScreenHeight - (SafeAreaBottomHeight + TabBarHeight + NavigatorHeight);
         
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, NavigatorHeight, ScreenWidth, tabelViewH) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, NavigatorHeight, ScreenWidth, tabelViewH) style:UITableViewStyleGrouped];
         [_tableView setDelegate:self];
         [_tableView setDataSource:self];
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.separatorStyle = UITableViewCellEditingStyleNone;
         
-        [_tableView setBackgroundColor:[UIColor purpleColor]];
+        //tableView -> headView
+        UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"banner"]];
+        [imageView setFrame:CGRectMake(0, 0, ScreenWidth, 200)];
+       
+        
+        _tableView.tableHeaderView = ({
+            UIView *back = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 200)];
+            back.backgroundColor = [UIColor clearColor];
+            [back addSubview:imageView];
+            back;
+        });
         
         
         //tableView -> cell

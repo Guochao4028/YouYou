@@ -7,6 +7,7 @@
 //
 
 #ifndef ayl_Prefix_pch
+
 #define ayl_Prefix_pch
 
 // Include any system framework and library headers here that should be included in all compilation units.
@@ -14,14 +15,23 @@
 #ifdef __OBJC__
 
 #import <UIKit/UIKit.h>
+
 #import <Foundation/Foundation.h>
 
 #import <AVFoundation/AVFoundation.h>
+
 #import <UIKit/UIKit.h>
 
 #import "YYPlayManager.h"
 
+#import "AFNetworking.h"
+
 #import "DefinedKeys.h"
 
+#import "DefinedURLs.h"
+
+#import "DefineBlocks.h"
+
 #endif
+
 #endif /* ayl_Prefix_pch */
