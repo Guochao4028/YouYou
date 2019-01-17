@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(DataManager*) shareInstance;
 
 
+-(void)getCategoryrRecommendsList:(NSDictionary * )pamer call:(NSArrayCallBack)call;
+
 @end
 
 NS_ASSUME_NONNULL_END

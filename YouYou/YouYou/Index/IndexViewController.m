@@ -30,7 +30,11 @@
 }
 
 -(void)initData{
-    
+    [[DataManager shareInstance]getCategoryrRecommendsList:nil call:^(NSArray *result) {
+       
+        GLog(@"%@", result);
+        
+    }];
 }
 
 #pragma mark - UITableViewDelegate && UITableViewDataSource

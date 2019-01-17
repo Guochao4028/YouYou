@@ -10,6 +10,25 @@
 
 @implementation DataManager
 
+
+-(void)getCategoryrRecommendsList:(NSDictionary * )pamer call:(NSArrayCallBack)call{
+    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
+    manager.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+    NSMutableDictionary * parameters = [[NSMutableDictionary alloc] initWithDictionary:pamer];
+    
+    NSString *str = [NSString stringWithFormat:@"%@%@", HOST, CATEGORYRECOMMENDS];
+    
+    [manager GET:str parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        
+        NSDictionary *dic = responseObject;
+//        [];
+        call(nil);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        call(nil);
+    }];
+}
+
 +(DataManager*) shareInstance{
     static DataManager * dataManager;
     if (!dataManager) {
@@ -37,8 +56,6 @@
     return [DataManager shareInstance];
 }
 
-+ (id)copyWithZone:(struct _NSZone *)zone{
-    return [DataManager shareInstance];
-}
+
 
 @end

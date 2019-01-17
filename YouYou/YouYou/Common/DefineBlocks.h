@@ -12,8 +12,6 @@ typedef void (^NSArrayCallBack) (NSArray * result);
 
 typedef void  (^NSObjectCallBack) (NSObject* object);
 
-typedef void (^ZDMessageCallBack) (Message * message);
+typedef void (^NSDataCallBack) (NSData* data);
 
-typedef void (^ZDNSDataCallBack) (NSData* data);
-
-typedef void (^ZDBoolCallBack) (Boolean isTrue);
+typedef void (^BoolCallBack) (Boolean isTrue);

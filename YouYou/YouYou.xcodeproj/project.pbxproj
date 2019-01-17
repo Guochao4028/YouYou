@@ -108,6 +108,10 @@
 		EF04242B21EF1F88008A8FF9 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0423D721EF1F87008A8FF9 /* UIButton+WebCache.m */; };
 		EF04242C21EF1F88008A8FF9 /* SDWebImageWebPCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0423D821EF1F87008A8FF9 /* SDWebImageWebPCoder.m */; };
 		EFC8E45C21EF3BA1007D5117 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E45B21EF3BA1007D5117 /* DataManager.m */; };
+		EFC8E46221F01E14007D5117 /* YYData.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46121F01E14007D5117 /* YYData.m */; };
+		EFC8E46521F02062007D5117 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46421F02062007D5117 /* Tag.m */; };
+		EFC8E46821F022DB007D5117 /* CategoryContent.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46721F022DB007D5117 /* CategoryContent.m */; };
+		EFC8E46B21F023FD007D5117 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46A21F023FD007D5117 /* Album.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -336,6 +340,14 @@
 		EFC8E45B21EF3BA1007D5117 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		EFC8E45D21EF3C48007D5117 /* DefineBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineBlocks.h; sourceTree = "<group>"; };
 		EFC8E45F21EF3CAC007D5117 /* DefinedURLs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefinedURLs.h; sourceTree = "<group>"; };
+		EFC8E46021F01E14007D5117 /* YYData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYData.h; sourceTree = "<group>"; };
+		EFC8E46121F01E14007D5117 /* YYData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYData.m; sourceTree = "<group>"; };
+		EFC8E46321F02062007D5117 /* Tag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		EFC8E46421F02062007D5117 /* Tag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		EFC8E46621F022DB007D5117 /* CategoryContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryContent.h; sourceTree = "<group>"; };
+		EFC8E46721F022DB007D5117 /* CategoryContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryContent.m; sourceTree = "<group>"; };
+		EFC8E46921F023FD007D5117 /* Album.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		EFC8E46A21F023FD007D5117 /* Album.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -484,6 +496,14 @@
 				EF0422B921EF06EF008A8FF9 /* YYPlayManager.m */,
 				EFC8E45A21EF3BA1007D5117 /* DataManager.h */,
 				EFC8E45B21EF3BA1007D5117 /* DataManager.m */,
+				EFC8E46021F01E14007D5117 /* YYData.h */,
+				EFC8E46121F01E14007D5117 /* YYData.m */,
+				EFC8E46321F02062007D5117 /* Tag.h */,
+				EFC8E46421F02062007D5117 /* Tag.m */,
+				EFC8E46621F022DB007D5117 /* CategoryContent.h */,
+				EFC8E46721F022DB007D5117 /* CategoryContent.m */,
+				EFC8E46921F023FD007D5117 /* Album.h */,
+				EFC8E46A21F023FD007D5117 /* Album.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -930,14 +950,17 @@
 				EF04241F21EF1F88008A8FF9 /* SDAnimatedImageRep.m in Sources */,
 				EF04242A21EF1F88008A8FF9 /* SDWebImageImageIOCoder.m in Sources */,
 				EF0422AE21EDF4B4008A8FF9 /* ClassifyViewController.m in Sources */,
+				EFC8E46B21F023FD007D5117 /* Album.m in Sources */,
 				EF0423EC21EF1F88008A8FF9 /* MJRefreshBackNormalFooter.m in Sources */,
 				EF04242B21EF1F88008A8FF9 /* UIButton+WebCache.m in Sources */,
 				EF04240721EF1F88008A8FF9 /* UIProgressView+AFNetworking.m in Sources */,
 				EF04241C21EF1F88008A8FF9 /* SDWebImagePrefetcher.m in Sources */,
 				EF0423DB21EF1F88008A8FF9 /* NSObject+MJKeyValue.m in Sources */,
 				EF0422B221EDF4ED008A8FF9 /* RemindViewController.m in Sources */,
+				EFC8E46521F02062007D5117 /* Tag.m in Sources */,
 				EF04242621EF1F88008A8FF9 /* SDWebImageGIFCoder.m in Sources */,
 				EF04242921EF1F88008A8FF9 /* UIView+WebCache.m in Sources */,
+				EFC8E46821F022DB007D5117 /* CategoryContent.m in Sources */,
 				EF04240B21EF1F88008A8FF9 /* UIButton+AFNetworking.m in Sources */,
 				EF04242221EF1F88008A8FF9 /* SDWebImageTransition.m in Sources */,
 				EF04242C21EF1F88008A8FF9 /* SDWebImageWebPCoder.m in Sources */,
@@ -949,6 +972,7 @@
 				EF0422AA21EDF470008A8FF9 /* IndexViewController.m in Sources */,
 				EF0423EF21EF1F88008A8FF9 /* MJRefreshAutoNormalFooter.m in Sources */,
 				EF04242021EF1F88008A8FF9 /* SDImageCache.m in Sources */,
+				EFC8E46221F01E14007D5117 /* YYData.m in Sources */,
 				EF0422A621EDF39A008A8FF9 /* BaseViewController.m in Sources */,
 				EF04240E21EF1F88008A8FF9 /* MBProgressHUD.m in Sources */,
 				EF0423DC21EF1F88008A8FF9 /* MJProperty.m in Sources */,
