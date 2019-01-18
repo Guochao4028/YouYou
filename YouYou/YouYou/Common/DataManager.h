@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)getDetails:(Album *)model call:(NSObjectCallBack)call;
 
+-(void)getCateforyAlbum:(NSDictionary * )pamer call:(NSArrayCallBack)call;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -17,5 +17,7 @@
 
 #define RANKINGLIST @"v2/rankingList/album?device=android&key=2_38_ranking:album:freeScore:1:38&pageId=1&pageSize=20&statEvent=pageview%2Franklist"
 
+#define CATEGORYALBUM @"v1/category/album"
+
 
 #endif /* DefinedURLs_h */

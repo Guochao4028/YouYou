@@ -84,6 +84,31 @@
     }];
 }
 
+
+-(void)getCateforyAlbum:(NSDictionary * )pamer call:(NSArrayCallBack)call{
+    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
+    manager.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+    NSMutableDictionary * parameters = [[NSMutableDictionary alloc] initWithDictionary:pamer];
+    
+    [parameters setValue:@"hot" forKey:@"calcDimension"];
+    [parameters setValue:@"ios" forKey:@"device"];
+    [parameters setValue:@"1" forKey:@"pageId"];
+    [parameters setValue:@"200" forKey:@"pageSize"];
+    [parameters setValue:@"0" forKey:@"status"];
+
+
+    NSString *str = [NSString stringWithFormat:@"%@%@", HOST, CATEGORYALBUM];
+    
+    [manager GET:str parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSDictionary *dic = responseObject;
+        NSArray *list = [Album mj_objectArrayWithKeyValuesArray:dic[@"list"]];
+        call(list);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        call(nil);
+    }];
+}
+
 +(DataManager*) shareInstance{
     static DataManager * dataManager;
     if (!dataManager) {
