@@ -10,7 +10,13 @@
 #import "CategoryContent.h"
 #import "CellHeaderView.h"
 #import "RollingCell.h"
+
+#import "ListTableViewCell.h"
+
 static NSString *RollingCellIdentifier = @"RollingCellIdentifier";
+static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
+
+
 @interface IndexViewController ()<UITableViewDelegate, UITableViewDataSource, CellHeaderViewDelegate>
 
 @property(nonatomic, strong)UITableView *tableView;
@@ -65,7 +71,7 @@ static NSString *RollingCellIdentifier = @"RollingCellIdentifier";
     if ((indexPath.section == 0) || (indexPath.section == 1)) {
         return 158;
     }else{
-        return 78;
+        return 96;
     }
 }
 
@@ -75,20 +81,21 @@ static NSString *RollingCellIdentifier = @"RollingCellIdentifier";
         RollingCell *cell = [tableView dequeueReusableCellWithIdentifier:RollingCellIdentifier];
         CategoryContent *model = self.dataList[indexPath.section];
         cell.model =  model;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else if (indexPath.section == 1){
         RollingCell *cell = [tableView dequeueReusableCellWithIdentifier:RollingCellIdentifier];
         CategoryContent *model = self.dataList[indexPath.section];
         cell.model =  model;
-        return cell;
-    }else{
-        UITableViewCell *cell = [[UITableViewCell alloc]init];
-//        [cell setBackgroundColor:[UIColor redColor]];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
+    }else{
+        CategoryContent *model = self.dataList[indexPath.section];
+        ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ListTableViewCellIdentifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.model =  model.list[indexPath.row];
+        return cell;
     }
-    
-    
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -155,7 +162,7 @@ static NSString *RollingCellIdentifier = @"RollingCellIdentifier";
         
         
         //tableView -> cell
-//        [_tableView registerNib:[UINib nibWithNibName:@"IndexTableViewCell" bundle:nil] forCellReuseIdentifier:IndexTableViewCellIdentifier];
+        [_tableView registerNib:[UINib nibWithNibName:@"ListTableViewCell" bundle:nil] forCellReuseIdentifier:ListTableViewCellIdentifier];
         [_tableView registerClass:[RollingCell class] forCellReuseIdentifier:RollingCellIdentifier];
         //
         //
