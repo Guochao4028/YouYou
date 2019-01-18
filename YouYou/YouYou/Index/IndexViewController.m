@@ -10,7 +10,7 @@
 #import "CategoryContent.h"
 #import "CellHeaderView.h"
 #import "RollingCell.h"
-
+#import "HotListViewController.h"
 #import "ListTableViewCell.h"
 
 static NSString *RollingCellIdentifier = @"RollingCellIdentifier";
@@ -132,7 +132,11 @@ static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
 
 #pragma mark - CellHeaderViewDelegate
 -(void)tagAction{
-    GLog(@"....");
+    CategoryContent *model = self.dataList[0];
+    HotListViewController *hotListVC = [[HotListViewController alloc]init];
+    [hotListVC setList:model.list];
+    hotListVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:hotListVC animated:YES];
 }
 
 #pragma mark - setter

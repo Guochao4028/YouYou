@@ -114,6 +114,10 @@
 		EF585F4121F1C79300B94DA4 /* RollingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF585F3F21F1C79300B94DA4 /* RollingCollectionViewCell.xib */; };
 		EF585F4521F1E56500B94DA4 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF585F4321F1E56500B94DA4 /* ListTableViewCell.m */; };
 		EF585F4621F1E56500B94DA4 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF585F4421F1E56500B94DA4 /* ListTableViewCell.xib */; };
+		EF585F4921F1F15E00B94DA4 /* HotListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF585F4821F1F15E00B94DA4 /* HotListViewController.m */; };
+		EF585F4E21F1F9BD00B94DA4 /* DetailsNavgationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF585F4D21F1F9BD00B94DA4 /* DetailsNavgationView.m */; };
+		EF585F5021F1F9C900B94DA4 /* DetailsNavgationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF585F4F21F1F9C900B94DA4 /* DetailsNavgationView.xib */; };
+		EF834E0E21F1FF0E00157BA9 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E0D21F1FF0E00157BA9 /* DetailsViewController.m */; };
 		EFC8E45C21EF3BA1007D5117 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E45B21EF3BA1007D5117 /* DataManager.m */; };
 		EFC8E46221F01E14007D5117 /* YYData.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46121F01E14007D5117 /* YYData.m */; };
 		EFC8E46521F02062007D5117 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46421F02062007D5117 /* Tag.m */; };
@@ -354,6 +358,13 @@
 		EF585F4221F1E56500B94DA4 /* ListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
 		EF585F4321F1E56500B94DA4 /* ListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
 		EF585F4421F1E56500B94DA4 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		EF585F4721F1F15E00B94DA4 /* HotListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotListViewController.h; sourceTree = "<group>"; };
+		EF585F4821F1F15E00B94DA4 /* HotListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotListViewController.m; sourceTree = "<group>"; };
+		EF585F4C21F1F9BD00B94DA4 /* DetailsNavgationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsNavgationView.h; sourceTree = "<group>"; };
+		EF585F4D21F1F9BD00B94DA4 /* DetailsNavgationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsNavgationView.m; sourceTree = "<group>"; };
+		EF585F4F21F1F9C900B94DA4 /* DetailsNavgationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsNavgationView.xib; sourceTree = "<group>"; };
+		EF834E0C21F1FF0E00157BA9 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		EF834E0D21F1FF0E00157BA9 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		EFC8E45A21EF3BA1007D5117 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		EFC8E45B21EF3BA1007D5117 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		EFC8E45D21EF3C48007D5117 /* DefineBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineBlocks.h; sourceTree = "<group>"; };
@@ -416,6 +427,7 @@
 		EF04226A21EDF072008A8FF9 /* YouYou */ = {
 			isa = PBXGroup;
 			children = (
+				EF585F4A21F1F96300B94DA4 /* Details */,
 				EF04232221EF1F86008A8FF9 /* ThirdParty */,
 				EF0422B721EF058B008A8FF9 /* Common */,
 				EF0422B321EDF506008A8FF9 /* Setup */,
@@ -472,6 +484,8 @@
 				EF585F3421F1A4F600B94DA4 /* Views */,
 				EF0422A821EDF470008A8FF9 /* IndexViewController.h */,
 				EF0422A921EDF470008A8FF9 /* IndexViewController.m */,
+				EF585F4721F1F15E00B94DA4 /* HotListViewController.h */,
+				EF585F4821F1F15E00B94DA4 /* HotListViewController.m */,
 			);
 			path = Index;
 			sourceTree = "<group>";
@@ -826,6 +840,26 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		EF585F4A21F1F96300B94DA4 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				EF585F4B21F1F98200B94DA4 /* Views */,
+				EF834E0C21F1FF0E00157BA9 /* DetailsViewController.h */,
+				EF834E0D21F1FF0E00157BA9 /* DetailsViewController.m */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		EF585F4B21F1F98200B94DA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF585F4C21F1F9BD00B94DA4 /* DetailsNavgationView.h */,
+				EF585F4D21F1F9BD00B94DA4 /* DetailsNavgationView.m */,
+				EF585F4F21F1F9C900B94DA4 /* DetailsNavgationView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -938,6 +972,7 @@
 				EF04227821EDF079008A8FF9 /* Assets.xcassets in Resources */,
 				EF04227321EDF072008A8FF9 /* Main.storyboard in Resources */,
 				EF585F3921F1A53800B94DA4 /* CellHeaderView.xib in Resources */,
+				EF585F5021F1F9C900B94DA4 /* DetailsNavgationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -976,6 +1011,7 @@
 				EF04240921EF1F88008A8FF9 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				EF0423F721EF1F88008A8FF9 /* MJRefreshComponent.m in Sources */,
 				EF04241821EF1F88008A8FF9 /* UIImage+GIF.m in Sources */,
+				EF585F4921F1F15E00B94DA4 /* HotListViewController.m in Sources */,
 				EF0423EA21EF1F88008A8FF9 /* MJRefreshBackGifFooter.m in Sources */,
 				EF04241B21EF1F88008A8FF9 /* SDWebImageCompat.m in Sources */,
 				EF0423FE21EF1F88008A8FF9 /* AFHTTPSessionManager.m in Sources */,
@@ -1023,6 +1059,7 @@
 				EF0423E921EF1F88008A8FF9 /* UIView+MJExtension.m in Sources */,
 				EF04240421EF1F88008A8FF9 /* AFNetworkReachabilityManager.m in Sources */,
 				EF0423FA21EF1F88008A8FF9 /* SVProgressHUD.m in Sources */,
+				EF585F4E21F1F9BD00B94DA4 /* DetailsNavgationView.m in Sources */,
 				EF04242721EF1F88008A8FF9 /* SDImageCacheConfig.m in Sources */,
 				EF04241A21EF1F88008A8FF9 /* SDWebImageCoderHelper.m in Sources */,
 				EF04242121EF1F88008A8FF9 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1055,6 +1092,7 @@
 				EF0423E421EF1F88008A8FF9 /* UIScrollView+MJRefresh.m in Sources */,
 				EF0422BA21EF06EF008A8FF9 /* YYPlayManager.m in Sources */,
 				EF0423DF21EF1F88008A8FF9 /* NSObject+MJProperty.m in Sources */,
+				EF834E0E21F1FF0E00157BA9 /* DetailsViewController.m in Sources */,
 				EF0422B621EDF515008A8FF9 /* SetupViewController.m in Sources */,
 				EF0423F121EF1F88008A8FF9 /* MJRefreshStateHeader.m in Sources */,
 				EF04241121EF1F88008A8FF9 /* MKAnnotationView+WebCache.m in Sources */,
