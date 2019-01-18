@@ -8,7 +8,6 @@
 
 #import "RootViewController.h"
 #import "BaseViewController.h"
-#import "PlayViewController.h"
 #import "SetupViewController.h"
 #import "RemindViewController.h"
 #import "ClassifyViewController.h"
@@ -31,9 +30,9 @@
 
 -(void)playingWithInfoDictionary:(NSNotificationCenter *)fit{
     
-    PlayViewController *vc = [[PlayViewController alloc]init];
-    
-    [self presentModalViewController:vc animated:YES];
+//    PlayViewController *vc = [[PlayViewController alloc]init];
+//    
+//    [self presentModalViewController:vc animated:YES];
 
 }
 
