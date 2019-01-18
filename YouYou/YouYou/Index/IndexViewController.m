@@ -9,7 +9,8 @@
 #import "IndexViewController.h"
 #import "CategoryContent.h"
 #import "CellHeaderView.h"
-
+#import "RollingCell.h"
+static NSString *RollingCellIdentifier = @"RollingCellIdentifier";
 @interface IndexViewController ()<UITableViewDelegate, UITableViewDataSource, CellHeaderViewDelegate>
 
 @property(nonatomic, strong)UITableView *tableView;
@@ -61,14 +62,33 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 78;
+    if ((indexPath.section == 0) || (indexPath.section == 1)) {
+        return 158;
+    }else{
+        return 78;
+    }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc]init];
-    [cell setBackgroundColor:[UIColor redColor]];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    return cell;
+    
+    if (indexPath.section == 0) {
+        RollingCell *cell = [tableView dequeueReusableCellWithIdentifier:RollingCellIdentifier];
+        CategoryContent *model = self.dataList[indexPath.section];
+        cell.model =  model;
+        return cell;
+    }else if (indexPath.section == 1){
+        RollingCell *cell = [tableView dequeueReusableCellWithIdentifier:RollingCellIdentifier];
+        CategoryContent *model = self.dataList[indexPath.section];
+        cell.model =  model;
+        return cell;
+    }else{
+        UITableViewCell *cell = [[UITableViewCell alloc]init];
+//        [cell setBackgroundColor:[UIColor redColor]];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }
+    
+    
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -80,13 +100,14 @@
 }
 
 -(UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-
+    CategoryContent *model = self.dataList[section];
     CellHeaderView *headerView = [[CellHeaderView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 44)];
+     [headerView setTitle:model.title];
     if (section != 0) {
         [headerView noEntry];
+    }else{
+        [headerView setTitle:@"热门排行榜"];
     }
-    CategoryContent *model = self.dataList[section];
-    [headerView setTitle:model.title];
     
     [headerView setDelegate:self];
     
@@ -122,11 +143,11 @@
         
         //tableView -> headView
         UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"banner"]];
-        [imageView setFrame:CGRectMake(0, 0, ScreenWidth, 200)];
+        [imageView setFrame:CGRectMake(0, 0, ScreenWidth, 244)];
        
         
         _tableView.tableHeaderView = ({
-            UIView *back = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 200)];
+            UIView *back = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 244)];
             back.backgroundColor = [UIColor clearColor];
             [back addSubview:imageView];
             back;
@@ -135,6 +156,7 @@
         
         //tableView -> cell
 //        [_tableView registerNib:[UINib nibWithNibName:@"IndexTableViewCell" bundle:nil] forCellReuseIdentifier:IndexTableViewCellIdentifier];
+        [_tableView registerClass:[RollingCell class] forCellReuseIdentifier:RollingCellIdentifier];
         //
         //
         //        _tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];

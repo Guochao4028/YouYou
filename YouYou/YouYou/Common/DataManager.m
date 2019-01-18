@@ -9,6 +9,7 @@
 #import "DataManager.h"
 #import "Tag.h"
 #import "CategoryContent.h"
+#import "Album.h"
 
 @implementation DataManager
 
@@ -20,7 +21,7 @@
     
     NSString *str = [NSString stringWithFormat:@"%@%@", HOST, CATEGORYRECOMMENDS];
     
-    [manager GET:str parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager GET:str parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSDictionary *dic = responseObject;
         
@@ -29,6 +30,29 @@
         data.tagsList = [Tag mj_objectArrayWithKeyValuesArray:dic[@"tags"][@"list"]];
         
         data.categoryContentsList = [CategoryContent mj_objectArrayWithKeyValuesArray:dic[@"categoryContents"][@"list"]];
+        
+        [self getRankingListAlbumCall:^(NSObject *object) {
+            call(nil);
+        }];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        call(nil);
+    }];
+}
+
+-(void)getRankingListAlbumCall:(NSObjectCallBack)call{
+    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
+    manager.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+  
+    NSString *str = [NSString stringWithFormat:@"%@%@", HOST, RANKINGLIST];
+    
+    [manager GET:str parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSDictionary *dic = responseObject;
+        YYData *data = [YYData shareInstance];
+        CategoryContent *mode =  [data.categoryContentsList firstObject];
+        
+        NSArray *list = [Album mj_objectArrayWithKeyValuesArray:dic[@"list"]];
+        mode.list = list;
         
         call(nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

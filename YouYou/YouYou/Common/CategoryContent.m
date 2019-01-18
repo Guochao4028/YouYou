@@ -10,4 +10,18 @@
 
 @implementation CategoryContent
 
+
++(NSDictionary *)mj_objectClassInArray{
+
+    return @{@"list":@"Album"};
+}
+
++ (NSDictionary *)mj_replacedKeyFromPropertyName
+{
+    return @{
+             @"list" : @"list"
+            };
+}
+
+
 @end

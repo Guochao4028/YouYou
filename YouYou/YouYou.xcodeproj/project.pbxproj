@@ -109,6 +109,9 @@
 		EF04242C21EF1F88008A8FF9 /* SDWebImageWebPCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0423D821EF1F87008A8FF9 /* SDWebImageWebPCoder.m */; };
 		EF585F3721F1A52900B94DA4 /* CellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF585F3621F1A52900B94DA4 /* CellHeaderView.m */; };
 		EF585F3921F1A53800B94DA4 /* CellHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF585F3821F1A53800B94DA4 /* CellHeaderView.xib */; };
+		EF585F3C21F1AD9600B94DA4 /* RollingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF585F3B21F1AD9600B94DA4 /* RollingCell.m */; };
+		EF585F4021F1C79300B94DA4 /* RollingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF585F3E21F1C79300B94DA4 /* RollingCollectionViewCell.m */; };
+		EF585F4121F1C79300B94DA4 /* RollingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF585F3F21F1C79300B94DA4 /* RollingCollectionViewCell.xib */; };
 		EFC8E45C21EF3BA1007D5117 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E45B21EF3BA1007D5117 /* DataManager.m */; };
 		EFC8E46221F01E14007D5117 /* YYData.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46121F01E14007D5117 /* YYData.m */; };
 		EFC8E46521F02062007D5117 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46421F02062007D5117 /* Tag.m */; };
@@ -341,6 +344,11 @@
 		EF585F3521F1A52900B94DA4 /* CellHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellHeaderView.h; sourceTree = "<group>"; };
 		EF585F3621F1A52900B94DA4 /* CellHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellHeaderView.m; sourceTree = "<group>"; };
 		EF585F3821F1A53800B94DA4 /* CellHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellHeaderView.xib; sourceTree = "<group>"; };
+		EF585F3A21F1AD9600B94DA4 /* RollingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RollingCell.h; sourceTree = "<group>"; };
+		EF585F3B21F1AD9600B94DA4 /* RollingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RollingCell.m; sourceTree = "<group>"; };
+		EF585F3D21F1C79300B94DA4 /* RollingCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RollingCollectionViewCell.h; sourceTree = "<group>"; };
+		EF585F3E21F1C79300B94DA4 /* RollingCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RollingCollectionViewCell.m; sourceTree = "<group>"; };
+		EF585F3F21F1C79300B94DA4 /* RollingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RollingCollectionViewCell.xib; sourceTree = "<group>"; };
 		EFC8E45A21EF3BA1007D5117 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		EFC8E45B21EF3BA1007D5117 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		EFC8E45D21EF3C48007D5117 /* DefineBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineBlocks.h; sourceTree = "<group>"; };
@@ -801,6 +809,11 @@
 				EF585F3521F1A52900B94DA4 /* CellHeaderView.h */,
 				EF585F3621F1A52900B94DA4 /* CellHeaderView.m */,
 				EF585F3821F1A53800B94DA4 /* CellHeaderView.xib */,
+				EF585F3A21F1AD9600B94DA4 /* RollingCell.h */,
+				EF585F3B21F1AD9600B94DA4 /* RollingCell.m */,
+				EF585F3D21F1C79300B94DA4 /* RollingCollectionViewCell.h */,
+				EF585F3E21F1C79300B94DA4 /* RollingCollectionViewCell.m */,
+				EF585F3F21F1C79300B94DA4 /* RollingCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -912,6 +925,7 @@
 				EF04227B21EDF079008A8FF9 /* LaunchScreen.storyboard in Resources */,
 				EF0422BE21EF19C9008A8FF9 /* api in Resources */,
 				EF0423E621EF1F88008A8FF9 /* MJRefresh.bundle in Resources */,
+				EF585F4121F1C79300B94DA4 /* RollingCollectionViewCell.xib in Resources */,
 				EF04227821EDF079008A8FF9 /* Assets.xcassets in Resources */,
 				EF04227321EDF072008A8FF9 /* Main.storyboard in Resources */,
 				EF585F3921F1A53800B94DA4 /* CellHeaderView.xib in Resources */,
@@ -939,6 +953,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF585F4021F1C79300B94DA4 /* RollingCollectionViewCell.m in Sources */,
 				EF04240521EF1F88008A8FF9 /* AFSecurityPolicy.m in Sources */,
 				EF0423E521EF1F88008A8FF9 /* MJRefreshConst.m in Sources */,
 				EF04240D21EF1F88008A8FF9 /* UIWebView+AFNetworking.m in Sources */,
@@ -988,6 +1003,7 @@
 				EF0423E321EF1F88008A8FF9 /* MJFoundation.m in Sources */,
 				EF0422AA21EDF470008A8FF9 /* IndexViewController.m in Sources */,
 				EF0423EF21EF1F88008A8FF9 /* MJRefreshAutoNormalFooter.m in Sources */,
+				EF585F3C21F1AD9600B94DA4 /* RollingCell.m in Sources */,
 				EF04242021EF1F88008A8FF9 /* SDImageCache.m in Sources */,
 				EFC8E46221F01E14007D5117 /* YYData.m in Sources */,
 				EF0422A621EDF39A008A8FF9 /* BaseViewController.m in Sources */,
@@ -1218,6 +1234,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aylios.YouYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -1236,6 +1253,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aylios.YouYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
