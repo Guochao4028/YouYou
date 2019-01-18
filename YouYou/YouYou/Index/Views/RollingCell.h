@@ -12,9 +12,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol RollingCellDelegate <NSObject>
+@optional
+-(void)getRollingId:(NSString *)aid;
+@end
+
 @interface RollingCell : UITableViewCell
 
 @property(nonatomic, strong)CategoryContent *model;
+
+@property(nonatomic, weak)id<RollingCellDelegate>delegate;
 
 @end
 

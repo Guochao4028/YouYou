@@ -12,12 +12,14 @@
 #import "RollingCell.h"
 #import "HotListViewController.h"
 #import "ListTableViewCell.h"
+#import "DetailsViewController.h"
+#import "Album.h"
 
 static NSString *RollingCellIdentifier = @"RollingCellIdentifier";
 static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
 
 
-@interface IndexViewController ()<UITableViewDelegate, UITableViewDataSource, CellHeaderViewDelegate>
+@interface IndexViewController ()<UITableViewDelegate, UITableViewDataSource, CellHeaderViewDelegate, RollingCellDelegate>
 
 @property(nonatomic, strong)UITableView *tableView;
 
@@ -82,12 +84,14 @@ static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
         CategoryContent *model = self.dataList[indexPath.section];
         cell.model =  model;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        [cell setDelegate:self];
         return cell;
     }else if (indexPath.section == 1){
         RollingCell *cell = [tableView dequeueReusableCellWithIdentifier:RollingCellIdentifier];
         CategoryContent *model = self.dataList[indexPath.section];
         cell.model =  model;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        [cell setDelegate:self];
         return cell;
     }else{
         CategoryContent *model = self.dataList[indexPath.section];
@@ -99,7 +103,12 @@ static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    CategoryContent *model = self.dataList[indexPath.section];
+    Album *album = model.list[indexPath.row];
+    DetailsViewController *vc = [[DetailsViewController alloc]init];
+    vc.albumid = album.albumId;
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -128,6 +137,14 @@ static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
 -(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     UIView *view = [UIView new];
     return view;
+}
+
+#pragma mark - RollingCellDelegate
+-(void)getRollingId:(NSString *)aid{
+    DetailsViewController *vc = [[DetailsViewController alloc]init];
+    vc.albumid = aid;
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - CellHeaderViewDelegate

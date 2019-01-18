@@ -12,6 +12,8 @@
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIImageView *collectionImageView;
 
+@property(nonatomic)NSInteger type;
+
 @end
 
 @implementation DetailsNavgationView
@@ -42,16 +44,16 @@
 }
 
 - (IBAction)collection:(UIButton *)sender {
-    [sender setSelected:!sender.selected];
+    self.type = !self.type;
     
-    if (sender.selected) {
+    if (self.type) {
         [self.collectionImageView setImage:[UIImage imageNamed:@"collectioned"]];
     }else{
         [self.collectionImageView setImage:[UIImage imageNamed:@"collection"]];
     }
     
     if ([self.delegate respondsToSelector:@selector(collectionAction:)] == YES) {
-        [self.delegate collectionAction:sender.selected];
+        [self.delegate collectionAction:self.type];
     }
 }
 

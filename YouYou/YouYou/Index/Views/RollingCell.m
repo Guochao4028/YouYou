@@ -9,6 +9,7 @@
 #import "RollingCell.h"
 #import "CategoryContent.h"
 #import "RollingCollectionViewCell.h"
+#import "Album.h"
 
 @interface RollingCell()<UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -43,6 +44,13 @@
     Album *album = self.model.list[indexPath.row];
     [cell setModel:album];
     return cell;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    Album *album = self.model.list[indexPath.row];
+    if ([self.delegate respondsToSelector:@selector(getRollingId:)]) {
+        [self.delegate getRollingId:album.albumId];
+    }
 }
 
 

@@ -8,7 +8,8 @@
 
 #import "HotListViewController.h"
 #import "ListTableViewCell.h"
-
+#import "DetailsViewController.h"
+#import "Album.h"
 
 static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
 
@@ -51,7 +52,11 @@ static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    Album *album = self.list[indexPath.row];
+    DetailsViewController *vc = [[DetailsViewController alloc]init];
+    vc.albumid = album.albumId;
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
