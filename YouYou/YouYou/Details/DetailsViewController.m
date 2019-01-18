@@ -8,10 +8,22 @@
 
 #import "DetailsViewController.h"
 #import "DetailsNavgationView.h"
+#import "DetailsModel.h"
+#import "Album.h"
+#import "Track.h"
+#import "DetailsHeardView.h"
+#import "DetailsTableViewCell.h"
+
+static NSString *DetailsTableViewCellIdentifier = @"DetailsTableViewCellIdentifier";
+
 
 @interface DetailsViewController ()<DetailsNavgationViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong)UITableView *tableView;
 @property(nonatomic, strong)DetailsNavgationView *navgationView;
+@property(nonatomic, strong)DetailsHeardView *heardView;
+
+@property(nonatomic, strong)NSArray *list;
+
 @end
 
 @implementation DetailsViewController
@@ -45,8 +57,17 @@
     
 //    GLog(@"albumid = %@", self.albumid);
     
+    [self.navgationView setTitleString: self.model.title];
+    
     [[DataManager shareInstance]getDetails:self.model call:^(NSObject *object) {
         GLog(@"object : %@", object);
+        
+        DetailsModel *model = (DetailsModel *)object;
+    
+        self.list = model.trackList;
+        
+        [self.heardView setModel:model.album];
+        
         [self.tableView reloadData];
     }];
 }
@@ -68,16 +89,24 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 1;
+    return self.list.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 90;
+    return 80;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc]init];
+    DetailsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DetailsTableViewCellIdentifier];
+    [cell setModel:[self.list objectAtIndex:indexPath.row]];
+    
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSDictionary *dic = @{@"all":self.list, @"loction":@(indexPath.row), @"curr":self.list[indexPath.row]};
+   
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"BeginPlay" object:nil userInfo:dic];
 }
 
 #pragma mark - getter/ setter
@@ -103,8 +132,22 @@
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.separatorStyle = UITableViewCellEditingStyleNone;
         
+        //tableView -> headView
+        self.heardView = ({
+            DetailsHeardView *heardView = [[DetailsHeardView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 100)];
+            
+            heardView;
+        });
+        
+        _tableView.tableHeaderView = ({
+            UIView *back = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 100)];
+            back.backgroundColor = [UIColor clearColor];
+            [back addSubview:self.heardView];
+            back;
+        });
+        
         //tableView -> cell
-//        [_tableView registerNib:[UINib nibWithNibName:@"HistroyTableViewCell" bundle:nil] forCellReuseIdentifier:HistroyTableViewCellIdentifier];
+        [_tableView registerNib:[UINib nibWithNibName:@"DetailsTableViewCell" bundle:nil] forCellReuseIdentifier:DetailsTableViewCellIdentifier];
 //        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:TableViewCellIdentifier];
     }
     return _tableView;

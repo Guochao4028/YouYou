@@ -36,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)NSString *refundSupportType;
 @property(nonatomic, strong)NSString *isVipFree;
 @property(nonatomic, strong)NSString *isDraft;
+@property(nonatomic, strong)NSString *customSubTitle;
 
 @end
 

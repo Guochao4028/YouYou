@@ -120,6 +120,10 @@
 		EF834E0E21F1FF0E00157BA9 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E0D21F1FF0E00157BA9 /* DetailsViewController.m */; };
 		EF834E1121F21EE000157BA9 /* DetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E1021F21EE000157BA9 /* DetailsModel.m */; };
 		EF834E1421F21F4E00157BA9 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E1321F21F4E00157BA9 /* Track.m */; };
+		EF834E1721F225D200157BA9 /* DetailsHeardView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E1621F225D200157BA9 /* DetailsHeardView.m */; };
+		EF834E1921F225DE00157BA9 /* DetailsHeardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF834E1821F225DE00157BA9 /* DetailsHeardView.xib */; };
+		EF834E1D21F22F6800157BA9 /* DetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E1B21F22F6800157BA9 /* DetailsTableViewCell.m */; };
+		EF834E1E21F22F6800157BA9 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF834E1C21F22F6800157BA9 /* DetailsTableViewCell.xib */; };
 		EFC8E45C21EF3BA1007D5117 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E45B21EF3BA1007D5117 /* DataManager.m */; };
 		EFC8E46221F01E14007D5117 /* YYData.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46121F01E14007D5117 /* YYData.m */; };
 		EFC8E46521F02062007D5117 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46421F02062007D5117 /* Tag.m */; };
@@ -371,6 +375,12 @@
 		EF834E1021F21EE000157BA9 /* DetailsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsModel.m; sourceTree = "<group>"; };
 		EF834E1221F21F4E00157BA9 /* Track.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
 		EF834E1321F21F4E00157BA9 /* Track.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		EF834E1521F225D200157BA9 /* DetailsHeardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsHeardView.h; sourceTree = "<group>"; };
+		EF834E1621F225D200157BA9 /* DetailsHeardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsHeardView.m; sourceTree = "<group>"; };
+		EF834E1821F225DE00157BA9 /* DetailsHeardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsHeardView.xib; sourceTree = "<group>"; };
+		EF834E1A21F22F6800157BA9 /* DetailsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsTableViewCell.h; sourceTree = "<group>"; };
+		EF834E1B21F22F6800157BA9 /* DetailsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsTableViewCell.m; sourceTree = "<group>"; };
+		EF834E1C21F22F6800157BA9 /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
 		EFC8E45A21EF3BA1007D5117 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		EFC8E45B21EF3BA1007D5117 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		EFC8E45D21EF3C48007D5117 /* DefineBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineBlocks.h; sourceTree = "<group>"; };
@@ -866,6 +876,12 @@
 				EF585F4C21F1F9BD00B94DA4 /* DetailsNavgationView.h */,
 				EF585F4D21F1F9BD00B94DA4 /* DetailsNavgationView.m */,
 				EF585F4F21F1F9C900B94DA4 /* DetailsNavgationView.xib */,
+				EF834E1521F225D200157BA9 /* DetailsHeardView.h */,
+				EF834E1621F225D200157BA9 /* DetailsHeardView.m */,
+				EF834E1821F225DE00157BA9 /* DetailsHeardView.xib */,
+				EF834E1A21F22F6800157BA9 /* DetailsTableViewCell.h */,
+				EF834E1B21F22F6800157BA9 /* DetailsTableViewCell.m */,
+				EF834E1C21F22F6800157BA9 /* DetailsTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -975,11 +991,13 @@
 			files = (
 				EF0423FC21EF1F88008A8FF9 /* SVProgressHUD.bundle in Resources */,
 				EF04227B21EDF079008A8FF9 /* LaunchScreen.storyboard in Resources */,
+				EF834E1E21F22F6800157BA9 /* DetailsTableViewCell.xib in Resources */,
 				EF0422BE21EF19C9008A8FF9 /* api in Resources */,
 				EF0423E621EF1F88008A8FF9 /* MJRefresh.bundle in Resources */,
 				EF585F4621F1E56500B94DA4 /* ListTableViewCell.xib in Resources */,
 				EF585F4121F1C79300B94DA4 /* RollingCollectionViewCell.xib in Resources */,
 				EF04227821EDF079008A8FF9 /* Assets.xcassets in Resources */,
+				EF834E1921F225DE00157BA9 /* DetailsHeardView.xib in Resources */,
 				EF04227321EDF072008A8FF9 /* Main.storyboard in Resources */,
 				EF585F3921F1A53800B94DA4 /* CellHeaderView.xib in Resources */,
 				EF585F5021F1F9C900B94DA4 /* DetailsNavgationView.xib in Resources */,
@@ -1025,6 +1043,7 @@
 				EF0423EA21EF1F88008A8FF9 /* MJRefreshBackGifFooter.m in Sources */,
 				EF04241B21EF1F88008A8FF9 /* SDWebImageCompat.m in Sources */,
 				EF0423FE21EF1F88008A8FF9 /* AFHTTPSessionManager.m in Sources */,
+				EF834E1D21F22F6800157BA9 /* DetailsTableViewCell.m in Sources */,
 				EF0423ED21EF1F88008A8FF9 /* MJRefreshAutoStateFooter.m in Sources */,
 				EF04240C21EF1F88008A8FF9 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				EF0423F921EF1F88008A8FF9 /* SVProgressAnimatedView.m in Sources */,
@@ -1070,6 +1089,7 @@
 				EF0423E921EF1F88008A8FF9 /* UIView+MJExtension.m in Sources */,
 				EF04240421EF1F88008A8FF9 /* AFNetworkReachabilityManager.m in Sources */,
 				EF0423FA21EF1F88008A8FF9 /* SVProgressHUD.m in Sources */,
+				EF834E1721F225D200157BA9 /* DetailsHeardView.m in Sources */,
 				EF585F4E21F1F9BD00B94DA4 /* DetailsNavgationView.m in Sources */,
 				EF04242721EF1F88008A8FF9 /* SDImageCacheConfig.m in Sources */,
 				EF04241A21EF1F88008A8FF9 /* SDWebImageCoderHelper.m in Sources */,

@@ -11,6 +11,7 @@
 @interface DetailsNavgationView()
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIImageView *collectionImageView;
+@property (weak, nonatomic) IBOutlet UILabel *title;
 
 @property(nonatomic)NSInteger type;
 
@@ -55,6 +56,13 @@
     if ([self.delegate respondsToSelector:@selector(collectionAction:)] == YES) {
         [self.delegate collectionAction:self.type];
     }
+}
+
+#pragma mark - setter / getter
+
+-(void)setTitleString:(NSString *)titleString{
+    _titleString = titleString;
+    [self.title setText:titleString];
 }
 
 

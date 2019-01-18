@@ -8,7 +8,7 @@
 
 #import "RootViewController.h"
 #import "BaseViewController.h"
-
+#import "PlayViewController.h"
 #import "SetupViewController.h"
 #import "RemindViewController.h"
 #import "ClassifyViewController.h"
@@ -25,7 +25,16 @@
     [super viewDidLoad];
     [self initTabbar];
     
-    [YYPlayManager sharedInstance];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playingWithInfoDictionary:) name:@"BeginPlay" object:nil];
+    
+}
+
+-(void)playingWithInfoDictionary:(NSNotificationCenter *)fit{
+    
+    PlayViewController *vc = [[PlayViewController alloc]init];
+    
+    [self presentModalViewController:vc animated:YES];
+
 }
 
 #pragma mark - private
