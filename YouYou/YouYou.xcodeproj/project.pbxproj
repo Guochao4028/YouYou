@@ -117,6 +117,17 @@
 		EF585F4921F1F15E00B94DA4 /* HotListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF585F4821F1F15E00B94DA4 /* HotListViewController.m */; };
 		EF585F4E21F1F9BD00B94DA4 /* DetailsNavgationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF585F4D21F1F9BD00B94DA4 /* DetailsNavgationView.m */; };
 		EF585F5021F1F9C900B94DA4 /* DetailsNavgationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF585F4F21F1F9C900B94DA4 /* DetailsNavgationView.xib */; };
+		EF713E6F21F26317003793C7 /* WJPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E6C21F26317003793C7 /* WJPlayingViewController.m */; };
+		EF713E7021F26317003793C7 /* WJPlayingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF713E6D21F26317003793C7 /* WJPlayingViewController.xib */; };
+		EF713E7321F263A9003793C7 /* UIView+AdjustFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E7221F263A9003793C7 /* UIView+AdjustFrame.m */; };
+		EF713E7621F263B7003793C7 /* WJMusicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E7421F263B7003793C7 /* WJMusicTool.m */; };
+		EF713E7921F263C8003793C7 /* WJMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E7821F263C8003793C7 /* WJMusic.m */; };
+		EF713E7C21F263D4003793C7 /* WJAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E7B21F263D4003793C7 /* WJAudioTool.m */; };
+		EF713E8121F26437003793C7 /* WJLrcView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E7D21F26435003793C7 /* WJLrcView.m */; };
+		EF713E8221F26437003793C7 /* WJLrcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E7E21F26436003793C7 /* WJLrcCell.m */; };
+		EF713E8521F26455003793C7 /* WJLrcline.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E8421F26455003793C7 /* WJLrcline.m */; };
+		EF713E8821F2647D003793C7 /* DRNRealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E8721F2647C003793C7 /* DRNRealTimeBlurView.m */; };
+		EF713E8B21F264A3003793C7 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E8921F264A2003793C7 /* UIImage+BoxBlur.m */; };
 		EF834E0E21F1FF0E00157BA9 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E0D21F1FF0E00157BA9 /* DetailsViewController.m */; };
 		EF834E1121F21EE000157BA9 /* DetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E1021F21EE000157BA9 /* DetailsModel.m */; };
 		EF834E1421F21F4E00157BA9 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E1321F21F4E00157BA9 /* Track.m */; };
@@ -369,6 +380,27 @@
 		EF585F4C21F1F9BD00B94DA4 /* DetailsNavgationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsNavgationView.h; sourceTree = "<group>"; };
 		EF585F4D21F1F9BD00B94DA4 /* DetailsNavgationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsNavgationView.m; sourceTree = "<group>"; };
 		EF585F4F21F1F9C900B94DA4 /* DetailsNavgationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsNavgationView.xib; sourceTree = "<group>"; };
+		EF713E6C21F26317003793C7 /* WJPlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJPlayingViewController.m; sourceTree = "<group>"; };
+		EF713E6D21F26317003793C7 /* WJPlayingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJPlayingViewController.xib; sourceTree = "<group>"; };
+		EF713E6E21F26317003793C7 /* WJPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJPlayingViewController.h; sourceTree = "<group>"; };
+		EF713E7121F263A9003793C7 /* UIView+AdjustFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AdjustFrame.h"; sourceTree = "<group>"; };
+		EF713E7221F263A9003793C7 /* UIView+AdjustFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AdjustFrame.m"; sourceTree = "<group>"; };
+		EF713E7421F263B7003793C7 /* WJMusicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJMusicTool.m; sourceTree = "<group>"; };
+		EF713E7521F263B7003793C7 /* WJMusicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJMusicTool.h; sourceTree = "<group>"; };
+		EF713E7721F263C7003793C7 /* WJMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJMusic.h; sourceTree = "<group>"; };
+		EF713E7821F263C8003793C7 /* WJMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJMusic.m; sourceTree = "<group>"; };
+		EF713E7A21F263D3003793C7 /* WJAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJAudioTool.h; sourceTree = "<group>"; };
+		EF713E7B21F263D4003793C7 /* WJAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJAudioTool.m; sourceTree = "<group>"; };
+		EF713E7D21F26435003793C7 /* WJLrcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJLrcView.m; sourceTree = "<group>"; };
+		EF713E7E21F26436003793C7 /* WJLrcCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJLrcCell.m; sourceTree = "<group>"; };
+		EF713E7F21F26437003793C7 /* WJLrcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLrcView.h; sourceTree = "<group>"; };
+		EF713E8021F26437003793C7 /* WJLrcCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLrcCell.h; sourceTree = "<group>"; };
+		EF713E8321F26454003793C7 /* WJLrcline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLrcline.h; sourceTree = "<group>"; };
+		EF713E8421F26455003793C7 /* WJLrcline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJLrcline.m; sourceTree = "<group>"; };
+		EF713E8621F2647C003793C7 /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
+		EF713E8721F2647C003793C7 /* DRNRealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRNRealTimeBlurView.m; sourceTree = "<group>"; };
+		EF713E8921F264A2003793C7 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+		EF713E8A21F264A2003793C7 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
 		EF834E0C21F1FF0E00157BA9 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		EF834E0D21F1FF0E00157BA9 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		EF834E0F21F21EE000157BA9 /* DetailsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsModel.h; sourceTree = "<group>"; };
@@ -486,6 +518,27 @@
 		EF0422A021EDF39A008A8FF9 /* Basis */ = {
 			isa = PBXGroup;
 			children = (
+				EF713E8A21F264A2003793C7 /* UIImage+BoxBlur.h */,
+				EF713E8921F264A2003793C7 /* UIImage+BoxBlur.m */,
+				EF713E8621F2647C003793C7 /* DRNRealTimeBlurView.h */,
+				EF713E8721F2647C003793C7 /* DRNRealTimeBlurView.m */,
+				EF713E8321F26454003793C7 /* WJLrcline.h */,
+				EF713E8421F26455003793C7 /* WJLrcline.m */,
+				EF713E8021F26437003793C7 /* WJLrcCell.h */,
+				EF713E7E21F26436003793C7 /* WJLrcCell.m */,
+				EF713E7F21F26437003793C7 /* WJLrcView.h */,
+				EF713E7D21F26435003793C7 /* WJLrcView.m */,
+				EF713E7A21F263D3003793C7 /* WJAudioTool.h */,
+				EF713E7B21F263D4003793C7 /* WJAudioTool.m */,
+				EF713E7721F263C7003793C7 /* WJMusic.h */,
+				EF713E7821F263C8003793C7 /* WJMusic.m */,
+				EF713E7521F263B7003793C7 /* WJMusicTool.h */,
+				EF713E7421F263B7003793C7 /* WJMusicTool.m */,
+				EF713E7121F263A9003793C7 /* UIView+AdjustFrame.h */,
+				EF713E7221F263A9003793C7 /* UIView+AdjustFrame.m */,
+				EF713E6E21F26317003793C7 /* WJPlayingViewController.h */,
+				EF713E6C21F26317003793C7 /* WJPlayingViewController.m */,
+				EF713E6D21F26317003793C7 /* WJPlayingViewController.xib */,
 				EF0422A321EDF39A008A8FF9 /* RootViewController.h */,
 				EF0422A121EDF39A008A8FF9 /* RootViewController.m */,
 				EF0422A421EDF39A008A8FF9 /* BaseViewController.h */,
@@ -996,6 +1049,7 @@
 				EF0423E621EF1F88008A8FF9 /* MJRefresh.bundle in Resources */,
 				EF585F4621F1E56500B94DA4 /* ListTableViewCell.xib in Resources */,
 				EF585F4121F1C79300B94DA4 /* RollingCollectionViewCell.xib in Resources */,
+				EF713E7021F26317003793C7 /* WJPlayingViewController.xib in Resources */,
 				EF04227821EDF079008A8FF9 /* Assets.xcassets in Resources */,
 				EF834E1921F225DE00157BA9 /* DetailsHeardView.xib in Resources */,
 				EF04227321EDF072008A8FF9 /* Main.storyboard in Resources */,
@@ -1055,6 +1109,7 @@
 				EF04240621EF1F88008A8FF9 /* UIAlertView+AFNetworking.m in Sources */,
 				EF04241F21EF1F88008A8FF9 /* SDAnimatedImageRep.m in Sources */,
 				EF04242A21EF1F88008A8FF9 /* SDWebImageImageIOCoder.m in Sources */,
+				EF713E7621F263B7003793C7 /* WJMusicTool.m in Sources */,
 				EF0422AE21EDF4B4008A8FF9 /* ClassifyViewController.m in Sources */,
 				EFC8E46B21F023FD007D5117 /* Album.m in Sources */,
 				EF0423EC21EF1F88008A8FF9 /* MJRefreshBackNormalFooter.m in Sources */,
@@ -1066,6 +1121,7 @@
 				EFC8E46521F02062007D5117 /* Tag.m in Sources */,
 				EF04242621EF1F88008A8FF9 /* SDWebImageGIFCoder.m in Sources */,
 				EF04242921EF1F88008A8FF9 /* UIView+WebCache.m in Sources */,
+				EF713E7321F263A9003793C7 /* UIView+AdjustFrame.m in Sources */,
 				EFC8E46821F022DB007D5117 /* CategoryContent.m in Sources */,
 				EF04240B21EF1F88008A8FF9 /* UIButton+AFNetworking.m in Sources */,
 				EF04242221EF1F88008A8FF9 /* SDWebImageTransition.m in Sources */,
@@ -1082,6 +1138,7 @@
 				EF04242021EF1F88008A8FF9 /* SDImageCache.m in Sources */,
 				EF585F4521F1E56500B94DA4 /* ListTableViewCell.m in Sources */,
 				EFC8E46221F01E14007D5117 /* YYData.m in Sources */,
+				EF713E7C21F263D4003793C7 /* WJAudioTool.m in Sources */,
 				EF0422A621EDF39A008A8FF9 /* BaseViewController.m in Sources */,
 				EF04240E21EF1F88008A8FF9 /* MBProgressHUD.m in Sources */,
 				EF0423DC21EF1F88008A8FF9 /* MJProperty.m in Sources */,
@@ -1092,6 +1149,11 @@
 				EF834E1721F225D200157BA9 /* DetailsHeardView.m in Sources */,
 				EF585F4E21F1F9BD00B94DA4 /* DetailsNavgationView.m in Sources */,
 				EF04242721EF1F88008A8FF9 /* SDImageCacheConfig.m in Sources */,
+				EF713E8B21F264A3003793C7 /* UIImage+BoxBlur.m in Sources */,
+				EF713E8221F26437003793C7 /* WJLrcCell.m in Sources */,
+				EF713E6F21F26317003793C7 /* WJPlayingViewController.m in Sources */,
+				EF713E8521F26455003793C7 /* WJLrcline.m in Sources */,
+				EF713E7921F263C8003793C7 /* WJMusic.m in Sources */,
 				EF04241A21EF1F88008A8FF9 /* SDWebImageCoderHelper.m in Sources */,
 				EF04242121EF1F88008A8FF9 /* SDWebImageDownloaderOperation.m in Sources */,
 				EF0423F521EF1F88008A8FF9 /* MJRefreshBackFooter.m in Sources */,
@@ -1116,6 +1178,7 @@
 				EF04227021EDF072008A8FF9 /* ViewController.m in Sources */,
 				EF04241021EF1F88008A8FF9 /* UIImage+WebP.m in Sources */,
 				EF04227E21EDF079008A8FF9 /* main.m in Sources */,
+				EF713E8821F2647D003793C7 /* DRNRealTimeBlurView.m in Sources */,
 				EF04226D21EDF072008A8FF9 /* AppDelegate.m in Sources */,
 				EF04240221EF1F88008A8FF9 /* AFURLRequestSerialization.m in Sources */,
 				EF834E1121F21EE000157BA9 /* DetailsModel.m in Sources */,
@@ -1129,6 +1192,7 @@
 				EF0423F121EF1F88008A8FF9 /* MJRefreshStateHeader.m in Sources */,
 				EF04241121EF1F88008A8FF9 /* MKAnnotationView+WebCache.m in Sources */,
 				EF0423F021EF1F88008A8FF9 /* MJRefreshNormalHeader.m in Sources */,
+				EF713E8121F26437003793C7 /* WJLrcView.m in Sources */,
 				EF04241521EF1F88008A8FF9 /* UIImage+ForceDecode.m in Sources */,
 				EF04241421EF1F88008A8FF9 /* SDWebImageFrame.m in Sources */,
 				EF04241D21EF1F88008A8FF9 /* SDWebImageCoder.m in Sources */,

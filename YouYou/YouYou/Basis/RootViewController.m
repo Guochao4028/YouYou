@@ -12,10 +12,14 @@
 #import "RemindViewController.h"
 #import "ClassifyViewController.h"
 #import "IndexViewController.h"
+#import "Track.h"
+#import "WJPlayingViewController.h"
+#import "WJMusic.h"
+#import "WJMusicTool.h"
 
 
 @interface RootViewController ()
-
+@property(nonatomic, strong)WJPlayingViewController *playingVc;
 @end
 
 @implementation RootViewController
@@ -28,12 +32,43 @@
     
 }
 
--(void)playingWithInfoDictionary:(NSNotificationCenter *)fit{
+-(void)playingWithInfoDictionary:(NSNotification *)fit{
     
-//    PlayViewController *vc = [[PlayViewController alloc]init];
-//    
-//    [self presentModalViewController:vc animated:YES];
-
+    NSDictionary  *dict = [fit userInfo];
+    
+    NSMutableArray *musicArray = [NSMutableArray array];
+    
+    NSArray *list = dict[@"all"];
+    NSInteger loction = [dict[@"loction"] integerValue];
+    Track *tarck = dict[@"curr"];
+    
+    
+    for (Track *temp in list) {
+        WJMusic *music = [[WJMusic alloc]init];
+        music.name = temp.title;
+        music.filename = temp.playUrl32;
+        music.singer = temp.nickname;
+        music.singerIcon = temp.smallLogo;
+        music.icon = temp.coverLarge;
+        [musicArray addObject:music];
+    }
+    
+    
+    WJMusic *music = [[WJMusic alloc]init];
+    music.name = tarck.title;
+    music.filename = tarck.playUrl32;
+    music.singer = tarck.nickname;
+    music.singerIcon = tarck.smallLogo;
+    music.icon = tarck.coverLarge;
+    
+    [WJMusicTool setMusics:musicArray];
+    
+    [WJMusicTool setPlayingMusic:music];
+    
+    
+    [self.playingVc show];
+//    [self presentViewController:play animated:YES completion:nil];
+    
 }
 
 #pragma mark - private
@@ -58,6 +93,15 @@
     UITabBarItem *tabBarItem = [[UITabBarItem alloc]initWithTitle:title image:image selectedImage:selectImage];
     nav.tabBarItem = tabBarItem;
     return nav;
+}
+
+- (WJPlayingViewController *)playingVc
+{
+    if (_playingVc == nil) {
+        _playingVc = [[WJPlayingViewController alloc] init];
+    }
+    
+    return _playingVc;
 }
 
 
