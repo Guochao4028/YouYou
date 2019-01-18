@@ -10,9 +10,33 @@
 #import "Tag.h"
 #import "CategoryContent.h"
 #import "Album.h"
+#import "DetailsModel.h"
+#import "Track.h"
 
 @implementation DataManager
 
+-(void)getDetails:(Album *)model call:(NSObjectCallBack)call{
+    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
+    manager.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain", nil];
+    
+    NSDictionary *params = @{@"albumId":model.albumId,@"title":model.title,@"isAsc":@(1),@"device":@"ios"};
+    
+    NSString *str = [NSString stringWithFormat:@"http://mobile.ximalaya.com/mobile/others/ca/album/track/%@/true/1/200", model.albumId];
+    
+    [manager GET:str parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *dic = responseObject;
+        
+        DetailsModel *model = [[DetailsModel alloc]init];
+        model.album = [Album mj_objectWithKeyValues:dic[@"album"]];
+        model.trackList = [Track mj_objectArrayWithKeyValuesArray:dic[@"tracks"][@"list"]];
+        call(model);
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        call(nil);
+    }];
+}
 
 -(void)getCategoryrRecommendsList:(NSDictionary * )pamer call:(NSArrayCallBack)call{
     AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];

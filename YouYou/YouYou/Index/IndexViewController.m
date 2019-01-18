@@ -106,7 +106,7 @@ static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
     CategoryContent *model = self.dataList[indexPath.section];
     Album *album = model.list[indexPath.row];
     DetailsViewController *vc = [[DetailsViewController alloc]init];
-    vc.albumid = album.albumId;
+    vc.model = album;
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
@@ -140,9 +140,9 @@ static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
 }
 
 #pragma mark - RollingCellDelegate
--(void)getRollingId:(NSString *)aid{
+-(void)getRollingId:(Album *)model{
     DetailsViewController *vc = [[DetailsViewController alloc]init];
-    vc.albumid = aid;
+    vc.model = model;
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }

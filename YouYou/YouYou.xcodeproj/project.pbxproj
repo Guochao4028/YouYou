@@ -118,6 +118,8 @@
 		EF585F4E21F1F9BD00B94DA4 /* DetailsNavgationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF585F4D21F1F9BD00B94DA4 /* DetailsNavgationView.m */; };
 		EF585F5021F1F9C900B94DA4 /* DetailsNavgationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF585F4F21F1F9C900B94DA4 /* DetailsNavgationView.xib */; };
 		EF834E0E21F1FF0E00157BA9 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E0D21F1FF0E00157BA9 /* DetailsViewController.m */; };
+		EF834E1121F21EE000157BA9 /* DetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E1021F21EE000157BA9 /* DetailsModel.m */; };
+		EF834E1421F21F4E00157BA9 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E1321F21F4E00157BA9 /* Track.m */; };
 		EFC8E45C21EF3BA1007D5117 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E45B21EF3BA1007D5117 /* DataManager.m */; };
 		EFC8E46221F01E14007D5117 /* YYData.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46121F01E14007D5117 /* YYData.m */; };
 		EFC8E46521F02062007D5117 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46421F02062007D5117 /* Tag.m */; };
@@ -365,6 +367,10 @@
 		EF585F4F21F1F9C900B94DA4 /* DetailsNavgationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsNavgationView.xib; sourceTree = "<group>"; };
 		EF834E0C21F1FF0E00157BA9 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		EF834E0D21F1FF0E00157BA9 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		EF834E0F21F21EE000157BA9 /* DetailsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsModel.h; sourceTree = "<group>"; };
+		EF834E1021F21EE000157BA9 /* DetailsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsModel.m; sourceTree = "<group>"; };
+		EF834E1221F21F4E00157BA9 /* Track.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		EF834E1321F21F4E00157BA9 /* Track.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
 		EFC8E45A21EF3BA1007D5117 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		EFC8E45B21EF3BA1007D5117 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		EFC8E45D21EF3C48007D5117 /* DefineBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineBlocks.h; sourceTree = "<group>"; };
@@ -537,6 +543,10 @@
 				EFC8E46721F022DB007D5117 /* CategoryContent.m */,
 				EFC8E46921F023FD007D5117 /* Album.h */,
 				EFC8E46A21F023FD007D5117 /* Album.m */,
+				EF834E0F21F21EE000157BA9 /* DetailsModel.h */,
+				EF834E1021F21EE000157BA9 /* DetailsModel.m */,
+				EF834E1221F21F4E00157BA9 /* Track.h */,
+				EF834E1321F21F4E00157BA9 /* Track.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1044,6 +1054,7 @@
 				EF04227621EDF072008A8FF9 /* YouYou.xcdatamodeld in Sources */,
 				EF0423FB21EF1F88008A8FF9 /* SVIndefiniteAnimatedView.m in Sources */,
 				EF04242521EF1F88008A8FF9 /* NSImage+WebCache.m in Sources */,
+				EF834E1421F21F4E00157BA9 /* Track.m in Sources */,
 				EF04241E21EF1F88008A8FF9 /* NSButton+WebCache.m in Sources */,
 				EF0423E321EF1F88008A8FF9 /* MJFoundation.m in Sources */,
 				EF0422AA21EDF470008A8FF9 /* IndexViewController.m in Sources */,
@@ -1087,6 +1098,7 @@
 				EF04227E21EDF079008A8FF9 /* main.m in Sources */,
 				EF04226D21EDF072008A8FF9 /* AppDelegate.m in Sources */,
 				EF04240221EF1F88008A8FF9 /* AFURLRequestSerialization.m in Sources */,
+				EF834E1121F21EE000157BA9 /* DetailsModel.m in Sources */,
 				EF0423F221EF1F88008A8FF9 /* MJRefreshGifHeader.m in Sources */,
 				EF0423E721EF1F88008A8FF9 /* UIScrollView+MJExtension.m in Sources */,
 				EF0423E421EF1F88008A8FF9 /* UIScrollView+MJRefresh.m in Sources */,

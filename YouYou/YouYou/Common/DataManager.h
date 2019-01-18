@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class Album;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DataManager : NSObject
@@ -16,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 -(void)getCategoryrRecommendsList:(NSDictionary * )pamer call:(NSArrayCallBack)call;
+
+-(void)getDetails:(Album *)model call:(NSObjectCallBack)call;
 
 @end
 

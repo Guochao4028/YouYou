@@ -8,11 +8,13 @@
 
 #import "BaseViewController.h"
 
+@class  Album;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailsViewController : BaseViewController
 
-@property(nonatomic, strong)NSString *albumid;
+@property(nonatomic, strong)Album *model;
 
 @end
 

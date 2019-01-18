@@ -48,7 +48,7 @@
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     Album *album = self.model.list[indexPath.row];
     if ([self.delegate respondsToSelector:@selector(getRollingId:)]) {
-        [self.delegate getRollingId:album.albumId];
+        [self.delegate getRollingId:album];
     }
 }
 

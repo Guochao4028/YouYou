@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class CategoryContent;
+@class CategoryContent, Album;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol RollingCellDelegate <NSObject>
 @optional
--(void)getRollingId:(NSString *)aid;
+-(void)getRollingId:(Album *)model;
 @end
 
 @interface RollingCell : UITableViewCell

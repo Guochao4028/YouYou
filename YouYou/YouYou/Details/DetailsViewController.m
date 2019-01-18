@@ -42,7 +42,13 @@
 -(void)initData{
 //    NSArray *tem = [[DBManager shareInstance]queryPlist];
 //    self.dataList = [NSMutableArray arrayWithArray:tem];
-    [self.tableView reloadData];
+    
+//    GLog(@"albumid = %@", self.albumid);
+    
+    [[DataManager shareInstance]getDetails:self.model call:^(NSObject *object) {
+        GLog(@"object : %@", object);
+        [self.tableView reloadData];
+    }];
 }
 
 #pragma mark - HistroyNavgtionViewDelegate
