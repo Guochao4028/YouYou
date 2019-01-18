@@ -51,7 +51,7 @@
 }
 
 -(void)collectionAction:(NSInteger)type{
-    GLog(@"....");
+    GLog(@"%ld", type);
 }
 
 #pragma mark - UITableViewDelegate && UITableViewDataSource

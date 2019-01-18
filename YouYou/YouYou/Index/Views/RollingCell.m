@@ -34,7 +34,6 @@
 }
 
 - (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    GLog(@"%ld", self.model.list.count);
     return self.model.list.count;
 }
 

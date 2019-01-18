@@ -107,9 +107,6 @@
 
 #pragma mark - private
 -(void)initData{
-    [[DataManager shareInstance]getCategoryrRecommendsList:@{} call:^(NSArray *result) {
-        GLog(@"%@", result);
-    }];
 }
 
 @end
