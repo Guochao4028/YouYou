@@ -128,6 +128,8 @@
 		EF713E8521F26455003793C7 /* WJLrcline.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E8421F26455003793C7 /* WJLrcline.m */; };
 		EF713E8821F2647D003793C7 /* DRNRealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E8721F2647C003793C7 /* DRNRealTimeBlurView.m */; };
 		EF713E8B21F264A3003793C7 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E8921F264A2003793C7 /* UIImage+BoxBlur.m */; };
+		EF713E8F21F27A8E003793C7 /* XMLYFindSubTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E8E21F27A8E003793C7 /* XMLYFindSubTitleView.m */; };
+		EF713E9221F27E77003793C7 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E9121F27E77003793C7 /* ListViewController.m */; };
 		EF834E0E21F1FF0E00157BA9 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E0D21F1FF0E00157BA9 /* DetailsViewController.m */; };
 		EF834E1121F21EE000157BA9 /* DetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E1021F21EE000157BA9 /* DetailsModel.m */; };
 		EF834E1421F21F4E00157BA9 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E1321F21F4E00157BA9 /* Track.m */; };
@@ -401,6 +403,10 @@
 		EF713E8721F2647C003793C7 /* DRNRealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRNRealTimeBlurView.m; sourceTree = "<group>"; };
 		EF713E8921F264A2003793C7 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
 		EF713E8A21F264A2003793C7 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		EF713E8D21F27A8E003793C7 /* XMLYFindSubTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYFindSubTitleView.h; sourceTree = "<group>"; };
+		EF713E8E21F27A8E003793C7 /* XMLYFindSubTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYFindSubTitleView.m; sourceTree = "<group>"; };
+		EF713E9021F27E77003793C7 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		EF713E9121F27E77003793C7 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		EF834E0C21F1FF0E00157BA9 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		EF834E0D21F1FF0E00157BA9 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		EF834E0F21F21EE000157BA9 /* DetailsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsModel.h; sourceTree = "<group>"; };
@@ -562,8 +568,11 @@
 		EF0422AB21EDF4A4008A8FF9 /* Classify */ = {
 			isa = PBXGroup;
 			children = (
+				EF713E8C21F27A87003793C7 /* Views */,
 				EF0422AC21EDF4B4008A8FF9 /* ClassifyViewController.h */,
 				EF0422AD21EDF4B4008A8FF9 /* ClassifyViewController.m */,
+				EF713E9021F27E77003793C7 /* ListViewController.h */,
+				EF713E9121F27E77003793C7 /* ListViewController.m */,
 			);
 			path = Classify;
 			sourceTree = "<group>";
@@ -939,6 +948,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		EF713E8C21F27A87003793C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF713E8D21F27A8E003793C7 /* XMLYFindSubTitleView.h */,
+				EF713E8E21F27A8E003793C7 /* XMLYFindSubTitleView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1129,6 +1147,7 @@
 				EF04227621EDF072008A8FF9 /* YouYou.xcdatamodeld in Sources */,
 				EF0423FB21EF1F88008A8FF9 /* SVIndefiniteAnimatedView.m in Sources */,
 				EF04242521EF1F88008A8FF9 /* NSImage+WebCache.m in Sources */,
+				EF713E9221F27E77003793C7 /* ListViewController.m in Sources */,
 				EF834E1421F21F4E00157BA9 /* Track.m in Sources */,
 				EF04241E21EF1F88008A8FF9 /* NSButton+WebCache.m in Sources */,
 				EF0423E321EF1F88008A8FF9 /* MJFoundation.m in Sources */,
@@ -1191,6 +1210,7 @@
 				EF0422B621EDF515008A8FF9 /* SetupViewController.m in Sources */,
 				EF0423F121EF1F88008A8FF9 /* MJRefreshStateHeader.m in Sources */,
 				EF04241121EF1F88008A8FF9 /* MKAnnotationView+WebCache.m in Sources */,
+				EF713E8F21F27A8E003793C7 /* XMLYFindSubTitleView.m in Sources */,
 				EF0423F021EF1F88008A8FF9 /* MJRefreshNormalHeader.m in Sources */,
 				EF713E8121F26437003793C7 /* WJLrcView.m in Sources */,
 				EF04241521EF1F88008A8FF9 /* UIImage+ForceDecode.m in Sources */,
