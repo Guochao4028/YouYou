@@ -107,6 +107,8 @@
 		EF04242A21EF1F88008A8FF9 /* SDWebImageImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0423D321EF1F87008A8FF9 /* SDWebImageImageIOCoder.m */; };
 		EF04242B21EF1F88008A8FF9 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0423D721EF1F87008A8FF9 /* UIButton+WebCache.m */; };
 		EF04242C21EF1F88008A8FF9 /* SDWebImageWebPCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0423D821EF1F87008A8FF9 /* SDWebImageWebPCoder.m */; };
+		EF585F3721F1A52900B94DA4 /* CellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF585F3621F1A52900B94DA4 /* CellHeaderView.m */; };
+		EF585F3921F1A53800B94DA4 /* CellHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF585F3821F1A53800B94DA4 /* CellHeaderView.xib */; };
 		EFC8E45C21EF3BA1007D5117 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E45B21EF3BA1007D5117 /* DataManager.m */; };
 		EFC8E46221F01E14007D5117 /* YYData.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46121F01E14007D5117 /* YYData.m */; };
 		EFC8E46521F02062007D5117 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8E46421F02062007D5117 /* Tag.m */; };
@@ -336,6 +338,9 @@
 		EF0423D721EF1F87008A8FF9 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		EF0423D821EF1F87008A8FF9 /* SDWebImageWebPCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageWebPCoder.m; sourceTree = "<group>"; };
 		EF0423D921EF1F87008A8FF9 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		EF585F3521F1A52900B94DA4 /* CellHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellHeaderView.h; sourceTree = "<group>"; };
+		EF585F3621F1A52900B94DA4 /* CellHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellHeaderView.m; sourceTree = "<group>"; };
+		EF585F3821F1A53800B94DA4 /* CellHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellHeaderView.xib; sourceTree = "<group>"; };
 		EFC8E45A21EF3BA1007D5117 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		EFC8E45B21EF3BA1007D5117 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		EFC8E45D21EF3C48007D5117 /* DefineBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineBlocks.h; sourceTree = "<group>"; };
@@ -451,6 +456,7 @@
 		EF0422A721EDF44D008A8FF9 /* Index */ = {
 			isa = PBXGroup;
 			children = (
+				EF585F3421F1A4F600B94DA4 /* Views */,
 				EF0422A821EDF470008A8FF9 /* IndexViewController.h */,
 				EF0422A921EDF470008A8FF9 /* IndexViewController.m */,
 			);
@@ -789,6 +795,16 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		EF585F3421F1A4F600B94DA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF585F3521F1A52900B94DA4 /* CellHeaderView.h */,
+				EF585F3621F1A52900B94DA4 /* CellHeaderView.m */,
+				EF585F3821F1A53800B94DA4 /* CellHeaderView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -898,6 +914,7 @@
 				EF0423E621EF1F88008A8FF9 /* MJRefresh.bundle in Resources */,
 				EF04227821EDF079008A8FF9 /* Assets.xcassets in Resources */,
 				EF04227321EDF072008A8FF9 /* Main.storyboard in Resources */,
+				EF585F3921F1A53800B94DA4 /* CellHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -995,6 +1012,7 @@
 				EF0423E821EF1F88008A8FF9 /* NSBundle+MJRefresh.m in Sources */,
 				EF04240F21EF1F88008A8FF9 /* MBProgressHUD+Add.m in Sources */,
 				EF0423F821EF1F88008A8FF9 /* SVRadialGradientLayer.m in Sources */,
+				EF585F3721F1A52900B94DA4 /* CellHeaderView.m in Sources */,
 				EF04240A21EF1F88008A8FF9 /* UIImageView+AFNetworking.m in Sources */,
 				EF0423DA21EF1F88008A8FF9 /* MJPropertyType.m in Sources */,
 				EF04241921EF1F88008A8FF9 /* UIImage+MultiFormat.m in Sources */,

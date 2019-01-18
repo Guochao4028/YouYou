@@ -7,6 +7,8 @@
 //
 
 #import "DataManager.h"
+#import "Tag.h"
+#import "CategoryContent.h"
 
 @implementation DataManager
 
@@ -20,9 +22,14 @@
     
     [manager GET:str parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        
         NSDictionary *dic = responseObject;
-//        [];
+        
+        YYData *data = [YYData shareInstance];
+        
+        data.tagsList = [Tag mj_objectArrayWithKeyValuesArray:dic[@"tags"][@"list"]];
+        
+        data.categoryContentsList = [CategoryContent mj_objectArrayWithKeyValuesArray:dic[@"categoryContents"][@"list"]];
+        
         call(nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         call(nil);

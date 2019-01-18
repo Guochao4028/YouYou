@@ -7,8 +7,10 @@
 //
 
 #import "IndexViewController.h"
+#import "CategoryContent.h"
+#import "CellHeaderView.h"
 
-@interface IndexViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface IndexViewController ()<UITableViewDelegate, UITableViewDataSource, CellHeaderViewDelegate>
 
 @property(nonatomic, strong)UITableView *tableView;
 
@@ -30,11 +32,16 @@
 }
 
 -(void)initData{
-    [[DataManager shareInstance]getCategoryrRecommendsList:nil call:^(NSArray *result) {
-       
-        GLog(@"%@", result);
-        
-    }];
+    YYData *data = [YYData shareInstance];
+    if (data.categoryContentsList.count > 0) {
+        self.dataList = [NSMutableArray arrayWithArray:data.categoryContentsList];
+        [self.tableView reloadData];
+    }else{
+        [[DataManager shareInstance]getCategoryrRecommendsList:@{} call:^(NSArray *result) {
+            self.dataList = [NSMutableArray arrayWithArray:data.categoryContentsList];
+            [self.tableView reloadData];
+        }];
+    }
 }
 
 #pragma mark - UITableViewDelegate && UITableViewDataSource
@@ -43,7 +50,14 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    if (section == 0) {
+        return 1;
+    }else if (section == 1){
+        return 1;
+    }else{
+        CategoryContent *model = self.dataList[section];
+        return model.list.count;
+    }
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -61,6 +75,37 @@
     
 }
 
+-(CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 44;
+}
+
+-(UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+
+    CellHeaderView *headerView = [[CellHeaderView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 44)];
+    if (section != 0) {
+        [headerView noEntry];
+    }
+    CategoryContent *model = self.dataList[section];
+    [headerView setTitle:model.title];
+    
+    [headerView setDelegate:self];
+    
+    return headerView;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+        return 10;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIView *view = [UIView new];
+    return view;
+}
+
+#pragma mark - CellHeaderViewDelegate
+-(void)tagAction{
+    GLog(@"....");
+}
 
 #pragma mark - setter
 -(UITableView *)tableView{

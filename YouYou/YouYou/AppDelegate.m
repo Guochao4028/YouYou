@@ -19,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    [self initData];
     // 设置Window的背景颜色
     self.window.backgroundColor = [UIColor whiteColor];
     // 设置并显示主窗口
@@ -103,6 +103,13 @@
         NSLog(@"Unresolved error %@, %@", error, error.userInfo);
         abort();
     }
+}
+
+#pragma mark - private
+-(void)initData{
+    [[DataManager shareInstance]getCategoryrRecommendsList:@{} call:^(NSArray *result) {
+        GLog(@"%@", result);
+    }];
 }
 
 @end
