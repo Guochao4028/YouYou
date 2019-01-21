@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DetailsNavgationView : UIView
 @property(nonatomic, weak)id<DetailsNavgationViewDelegate>delegate;
 @property(nonatomic, strong)NSString *titleString;
+
+-(void)collectionColor:(BOOL)type;
 @end
 
 NS_ASSUME_NONNULL_END

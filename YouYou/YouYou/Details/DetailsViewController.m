@@ -51,15 +51,17 @@ static NSString *DetailsTableViewCellIdentifier = @"DetailsTableViewCellIdentifi
 -(void)initUI{
     [self.view addSubview:self.navgationView];
     [self.view addSubview:self.tableView];
+    NSArray *list = [WHCSqlite query:[Album class] where:[NSString stringWithFormat:@"albumId = %@", self.model.albumId]];
+    
+    if(list.count > 0){
+        [self.navgationView collectionColor:YES];
+    }else{
+        [self.navgationView collectionColor:NO];
+    }
+    
 }
 -(void)initData{
-//    NSArray *tem = [[DBManager shareInstance]queryPlist];
-//    self.dataList = [NSMutableArray arrayWithArray:tem];
-    
-//    GLog(@"albumid = %@", self.albumid);
-    
     [self.navgationView setTitleString: self.model.title];
-    
     [[DataManager shareInstance]getDetails:self.model call:^(NSObject *object) {
         GLog(@"object : %@", object);
         DetailsModel *model = (DetailsModel *)object;

@@ -58,6 +58,15 @@
     }
 }
 
+-(void)collectionColor:(BOOL)type{
+    self.type = type;
+    if (self.type) {
+        [self.collectionImageView setImage:[UIImage imageNamed:@"collectioned"]];
+    }else{
+        [self.collectionImageView setImage:[UIImage imageNamed:@"collection"]];
+    }
+}
+
 #pragma mark - setter / getter
 
 -(void)setTitleString:(NSString *)titleString{
