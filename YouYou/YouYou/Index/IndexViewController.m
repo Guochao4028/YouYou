@@ -14,6 +14,7 @@
 #import "ListTableViewCell.h"
 #import "DetailsViewController.h"
 #import "Album.h"
+#import "SVProgressHUD.h"
 
 static NSString *RollingCellIdentifier = @"RollingCellIdentifier";
 static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
@@ -41,16 +42,23 @@ static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
 }
 
 -(void)initData{
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD showWithStatus:@"加载数据"];
     YYData *data = [YYData shareInstance];
     if (data.categoryContentsList.count > 0) {
         self.dataList = [NSMutableArray arrayWithArray:data.categoryContentsList];
         [self.tableView reloadData];
+        [self.tableView.mj_header endRefreshing];
+        [SVProgressHUD dismiss];
     }else{
         [[DataManager shareInstance]getCategoryrRecommendsList:@{} call:^(NSArray *result) {
             self.dataList = [NSMutableArray arrayWithArray:data.categoryContentsList];
             [self.tableView reloadData];
+            [self.tableView.mj_header endRefreshing];
+            [SVProgressHUD dismiss];
         }];
     }
+    [self.tableView.mj_header endRefreshing];
 }
 
 #pragma mark - UITableViewDelegate && UITableViewDataSource
@@ -180,14 +188,11 @@ static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
             [back addSubview:imageView];
             back;
         });
-        
-        
         //tableView -> cell
         [_tableView registerNib:[UINib nibWithNibName:@"ListTableViewCell" bundle:nil] forCellReuseIdentifier:ListTableViewCellIdentifier];
         [_tableView registerClass:[RollingCell class] forCellReuseIdentifier:RollingCellIdentifier];
         //
-        //
-        //        _tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+        _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(initData)];
     }
     return _tableView;
 }

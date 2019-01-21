@@ -36,6 +36,8 @@
 
 #import "MJExtension.h"
 
+#import "MJRefresh.h"
+
 #import "YYData.h" 
 
 #endif

@@ -14,6 +14,7 @@
 #import "DetailsHeardView.h"
 #import "DetailsTableViewCell.h"
 #import "WHC_ModelSqlite.h"
+#import "SVProgressHUD.h"
 
 static NSString *DetailsTableViewCellIdentifier = @"DetailsTableViewCellIdentifier";
 
@@ -61,6 +62,8 @@ static NSString *DetailsTableViewCellIdentifier = @"DetailsTableViewCellIdentifi
     
 }
 -(void)initData{
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD showWithStatus:@"加载数据"];
     [self.navgationView setTitleString: self.model.title];
     [[DataManager shareInstance]getDetails:self.model call:^(NSObject *object) {
         GLog(@"object : %@", object);
@@ -68,6 +71,7 @@ static NSString *DetailsTableViewCellIdentifier = @"DetailsTableViewCellIdentifi
         self.list = model.trackList;
         [self.heardView setModel:model.album];
         [self.tableView reloadData];
+        [SVProgressHUD dismiss];
     }];
 }
 
@@ -154,6 +158,7 @@ static NSString *DetailsTableViewCellIdentifier = @"DetailsTableViewCellIdentifi
         //tableView -> cell
         [_tableView registerNib:[UINib nibWithNibName:@"DetailsTableViewCell" bundle:nil] forCellReuseIdentifier:DetailsTableViewCellIdentifier];
 //        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:TableViewCellIdentifier];
+        _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(initData)];
     }
     return _tableView;
 }

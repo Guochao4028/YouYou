@@ -10,6 +10,7 @@
 #import "ListTableViewCell.h"
 #import "DetailsViewController.h"
 #import "Tag.h"
+#import "SVProgressHUD.h"
 
 static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
 
@@ -30,15 +31,30 @@ static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD showWithStatus:@"加载数据"];
     NSDictionary *dic = @{@"categoryId": self.model.category_id, @"tagName":self.model.tname};
     
     [[DataManager shareInstance]getCateforyAlbum:dic call:^(NSArray *result) {
         [self.dataList addObjectsFromArray:result];
         [self.tableView reloadData];
+         [SVProgressHUD dismiss];
     }];
     
     [super viewWillAppear:animated];
+}
+
+-(void)initData{
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD showWithStatus:@"加载数据"];
+    NSDictionary *dic = @{@"categoryId": self.model.category_id, @"tagName":self.model.tname};
+    
+    [[DataManager shareInstance]getCateforyAlbum:dic call:^(NSArray *result) {
+        [self.dataList addObjectsFromArray:result];
+        [self.tableView reloadData];
+        [self.tableView.mj_header endRefreshing];
+        [SVProgressHUD dismiss];
+    }];
 }
 
 #pragma mark - UITableViewDelegate && UITableViewDataSource
@@ -95,7 +111,7 @@ static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
     
     if (_tableView == nil) {
         
-        CGFloat tabelViewH = ScreenHeight - (SafeAreaBottomHeight + TabBarHeight + NavigatorHeight);
+//        CGFloat tabelViewH = ScreenHeight - (SafeAreaBottomHeight + TabBarHeight + NavigatorHeight);
         
         _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
         [_tableView setDelegate:self];
@@ -108,6 +124,8 @@ static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
         //
         //
         //        _tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+        
+        _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(initData)];
     }
     return _tableView;
 }
