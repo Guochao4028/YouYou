@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Track : NSObject
+@interface Track : NSObject<NSCoding>
 
 @property(nonatomic, strong)NSString * trackId;
 @property(nonatomic, strong)NSString * uid;

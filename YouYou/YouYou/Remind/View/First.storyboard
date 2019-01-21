@@ -164,7 +164,7 @@
             </objects>
             <point key="canvasLocation" x="-620" y="-335"/>
         </scene>
-        <!--添加闹钟-->
+        <!--添加提示-->
         <scene sceneID="wR6-vg-TLO">
             <objects>
                 <tableViewController id="IJX-eC-1OB" customClass="AddClockViewController" sceneMemberID="viewController">
@@ -330,7 +330,7 @@
                             <outlet property="delegate" destination="IJX-eC-1OB" id="DZq-Ih-tlP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="添加闹钟" id="9Ah-BG-GjQ">
+                    <navigationItem key="navigationItem" title="添加提示" id="9Ah-BG-GjQ">
                         <barButtonItem key="leftBarButtonItem" title="取消" id="C1H-fL-ziy">
                             <connections>
                                 <action selector="action_backBtn:" destination="IJX-eC-1OB" id="kys-kh-iUb"/>

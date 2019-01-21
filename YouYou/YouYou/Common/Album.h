@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-@interface Album : NSObject
+@interface Album : NSObject<NSCoding>
 
 @property(nonatomic, strong)NSString *albumId;
 @property(nonatomic, strong)NSString *uid;

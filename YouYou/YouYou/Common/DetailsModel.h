@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DetailsModel : NSObject
+@interface DetailsModel : NSObject<NSCoding>
 
 @property(nonatomic, strong)Album *album;
 @property(nonatomic, strong)NSArray <Track *>* trackList;

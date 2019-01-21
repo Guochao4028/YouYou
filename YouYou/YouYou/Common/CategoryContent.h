@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CategoryContent : NSObject
+@interface CategoryContent : NSObject<NSCoding>
 
 
 @property(nonatomic, strong)NSString *moduleType;
