@@ -7,10 +7,17 @@
 //
 
 #import "CollectionViewController.h"
+#import "WHC_ModelSqlite.h"
+#import "Album.h"
+#import "DetailsViewController.h"
+#import "ListTableViewCell.h"
 
+static NSString *ListTableViewCellIdentifier = @"ListTableViewCellIdentifier";
 @interface CollectionViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property(nonatomic, strong)UITableView *tableView;
+
+@property(nonatomic, strong)NSArray *dataList;
 
 @end
 
@@ -32,7 +39,12 @@
 }
 
 -(void)initData{
-   
+    NSString * path = [WHCSqlite localPathWithModel:[Album class]];
+    NSLog(@"localPath = %@",path);
+    
+    self.dataList = [WHCSqlite query:[Album class]];
+    
+    [self.tableView reloadData];
 }
 #pragma mark - UITableViewDelegate && UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -40,7 +52,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return self.dataList.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -49,12 +61,20 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [[UITableViewCell alloc]init];
+    ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ListTableViewCellIdentifier];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.model =  self.dataList[indexPath.row];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    Album *album = self.dataList[indexPath.row];
+    DetailsViewController *vc = [[DetailsViewController alloc]init];
+    vc.model = album;
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
+
 
 -(CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 0.01;
@@ -86,7 +106,7 @@
         [_tableView setDataSource:self];
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.separatorStyle = UITableViewCellEditingStyleNone;
-        
+        [_tableView registerNib:[UINib nibWithNibName:@"ListTableViewCell" bundle:nil] forCellReuseIdentifier:ListTableViewCellIdentifier];
     }
     return _tableView;
 }

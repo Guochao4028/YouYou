@@ -13,6 +13,7 @@
 #import "Track.h"
 #import "DetailsHeardView.h"
 #import "DetailsTableViewCell.h"
+#import "WHC_ModelSqlite.h"
 
 static NSString *DetailsTableViewCellIdentifier = @"DetailsTableViewCellIdentifier";
 
@@ -61,13 +62,9 @@ static NSString *DetailsTableViewCellIdentifier = @"DetailsTableViewCellIdentifi
     
     [[DataManager shareInstance]getDetails:self.model call:^(NSObject *object) {
         GLog(@"object : %@", object);
-        
         DetailsModel *model = (DetailsModel *)object;
-    
         self.list = model.trackList;
-        
         [self.heardView setModel:model.album];
-        
         [self.tableView reloadData];
     }];
 }
@@ -79,6 +76,12 @@ static NSString *DetailsTableViewCellIdentifier = @"DetailsTableViewCellIdentifi
 
 -(void)collectionAction:(NSInteger)type{
     GLog(@"%ld", type);
+    if(type == 1){
+        [WHCSqlite insert:self.model];
+    }else{
+        [WHCSqlite delete:[Album class]
+                    where:[NSString stringWithFormat:@"albumId = %@", self.model.albumId]];
+    }
 }
 
 #pragma mark - UITableViewDelegate && UITableViewDataSource

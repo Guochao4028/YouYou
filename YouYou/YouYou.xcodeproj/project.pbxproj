@@ -164,6 +164,8 @@
 		EF713E8B21F264A3003793C7 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E8921F264A2003793C7 /* UIImage+BoxBlur.m */; };
 		EF713E8F21F27A8E003793C7 /* XMLYFindSubTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E8E21F27A8E003793C7 /* XMLYFindSubTitleView.m */; };
 		EF713E9221F27E77003793C7 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF713E9121F27E77003793C7 /* ListViewController.m */; };
+		EF80E34921F59724004FBFE4 /* NSObject+WHC_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80E34821F59724004FBFE4 /* NSObject+WHC_Model.m */; };
+		EF80E34D21F5972E004FBFE4 /* WHC_ModelSqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80E34C21F5972D004FBFE4 /* WHC_ModelSqlite.m */; };
 		EF834E0E21F1FF0E00157BA9 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E0D21F1FF0E00157BA9 /* DetailsViewController.m */; };
 		EF834E1121F21EE000157BA9 /* DetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E1021F21EE000157BA9 /* DetailsModel.m */; };
 		EF834E1421F21F4E00157BA9 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = EF834E1321F21F4E00157BA9 /* Track.m */; };
@@ -527,6 +529,10 @@
 		EF713E8E21F27A8E003793C7 /* XMLYFindSubTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYFindSubTitleView.m; sourceTree = "<group>"; };
 		EF713E9021F27E77003793C7 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		EF713E9121F27E77003793C7 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		EF80E34721F59724004FBFE4 /* NSObject+WHC_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WHC_Model.h"; sourceTree = "<group>"; };
+		EF80E34821F59724004FBFE4 /* NSObject+WHC_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WHC_Model.m"; sourceTree = "<group>"; };
+		EF80E34B21F5972D004FBFE4 /* WHC_ModelSqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHC_ModelSqlite.h; sourceTree = "<group>"; };
+		EF80E34C21F5972D004FBFE4 /* WHC_ModelSqlite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHC_ModelSqlite.m; sourceTree = "<group>"; };
 		EF834E0C21F1FF0E00157BA9 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		EF834E0D21F1FF0E00157BA9 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		EF834E0F21F21EE000157BA9 /* DetailsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsModel.h; sourceTree = "<group>"; };
@@ -776,6 +782,8 @@
 		EF0422B321EDF506008A8FF9 /* Setup */ = {
 			isa = PBXGroup;
 			children = (
+				EF80E34A21F5972D004FBFE4 /* WHC_ModelSqliteKit */,
+				EF80E34621F59724004FBFE4 /* WHC_ModelKit */,
 				EFF61ECE21F5669F00E2591F /* Model */,
 				EFF61ED321F5669F00E2591F /* View */,
 				EFF61ECD21F5669500E2591F /* XBConst.h */,
@@ -1261,6 +1269,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		EF80E34621F59724004FBFE4 /* WHC_ModelKit */ = {
+			isa = PBXGroup;
+			children = (
+				EF80E34721F59724004FBFE4 /* NSObject+WHC_Model.h */,
+				EF80E34821F59724004FBFE4 /* NSObject+WHC_Model.m */,
+			);
+			path = WHC_ModelKit;
+			sourceTree = "<group>";
+		};
+		EF80E34A21F5972D004FBFE4 /* WHC_ModelSqliteKit */ = {
+			isa = PBXGroup;
+			children = (
+				EF80E34B21F5972D004FBFE4 /* WHC_ModelSqlite.h */,
+				EF80E34C21F5972D004FBFE4 /* WHC_ModelSqlite.m */,
+			);
+			path = WHC_ModelSqliteKit;
+			sourceTree = "<group>";
+		};
 		EFF61ECE21F5669F00E2591F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1496,6 +1522,7 @@
 				EF1BBA4E21F291100021B5B3 /* NSObject+YYModel.m in Sources */,
 				EF0423EE21EF1F88008A8FF9 /* MJRefreshAutoGifFooter.m in Sources */,
 				EF0423FD21EF1F88008A8FF9 /* AFURLResponseSerialization.m in Sources */,
+				EF80E34921F59724004FBFE4 /* NSObject+WHC_Model.m in Sources */,
 				EF04240921EF1F88008A8FF9 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				EFF61EDA21F5669F00E2591F /* XBSettingSectionModel.m in Sources */,
 				EF0423F721EF1F88008A8FF9 /* MJRefreshComponent.m in Sources */,
@@ -1554,6 +1581,7 @@
 				EF04227621EDF072008A8FF9 /* YouYou.xcdatamodeld in Sources */,
 				EF0423FB21EF1F88008A8FF9 /* SVIndefiniteAnimatedView.m in Sources */,
 				EF04242521EF1F88008A8FF9 /* NSImage+WebCache.m in Sources */,
+				EF80E34D21F5972E004FBFE4 /* WHC_ModelSqlite.m in Sources */,
 				EF713E9221F27E77003793C7 /* ListViewController.m in Sources */,
 				EF834E1421F21F4E00157BA9 /* Track.m in Sources */,
 				EF04241E21EF1F88008A8FF9 /* NSButton+WebCache.m in Sources */,
