@@ -54,7 +54,7 @@
                             <constraint firstAttribute="width" constant="115" id="kV0-EL-xb3"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="U8R-VD-2kX">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play-1" translatesAutoresizingMaskIntoConstraints="NO" id="U8R-VD-2kX">
                         <rect key="frame" x="232.5" y="32" width="32" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="32" id="XTj-yc-rHz"/>
@@ -90,6 +90,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="play" width="32" height="32"/>
+        <image name="play-1" width="32" height="32"/>
     </resources>
 </document>

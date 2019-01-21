@@ -157,17 +157,22 @@
     self.singerLabel.text = playingMusic.singer;
     
     UIImageView *imagev = [UIImageView new];
+    
+    GLog(@"playingMusic : %@", playingMusic.icon);
+    
     [imagev sd_setImageWithURL:[NSURL URLWithString:playingMusic.icon] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        
+        GLog(@"imageURL : %@", imageURL);
         
         dispatch_async(dispatch_get_main_queue(), ^{
             // 主线程，UI更新
             self.singerIcon.image = image;
         });
-        
-        
     }];
     
-    
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:playingMusic.icon]];
+    self.singerIcon.image = image;
+  
     
     // 2.2.给歌词View,歌词的文件名称
     self.lrcView.lrcname = playingMusic.lrcname;
