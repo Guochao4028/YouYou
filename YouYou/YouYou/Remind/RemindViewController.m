@@ -8,6 +8,8 @@
 
 #import "RemindViewController.h"
 
+#import "HomeViewController.h"
+
 @interface RemindViewController ()
 
 @end
@@ -17,6 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIStoryboard *firstSB = [UIStoryboard storyboardWithName:@"First" bundle:nil];
+    HomeViewController *viewC =[firstSB instantiateViewControllerWithIdentifier:@"first-nav"];
+    [self addChildViewController:viewC];
+    [self.view addSubview:viewC.view];
+    [viewC.view setFrame:self.view.bounds];
+}
+
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES];
+    [super viewWillAppear:animated];
 }
 
 /*

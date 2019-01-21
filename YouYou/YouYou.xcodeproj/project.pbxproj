@@ -107,6 +107,40 @@
 		EF04242A21EF1F88008A8FF9 /* SDWebImageImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0423D321EF1F87008A8FF9 /* SDWebImageImageIOCoder.m */; };
 		EF04242B21EF1F88008A8FF9 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0423D721EF1F87008A8FF9 /* UIButton+WebCache.m */; };
 		EF04242C21EF1F88008A8FF9 /* SDWebImageWebPCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0423D821EF1F87008A8FF9 /* SDWebImageWebPCoder.m */; };
+		EF1BBA1721F290F30021B5B3 /* lightM_04.caf in Resources */ = {isa = PBXBuildFile; fileRef = EF1BBA1121F290F20021B5B3 /* lightM_04.caf */; };
+		EF1BBA1821F290F30021B5B3 /* lightM_02.caf in Resources */ = {isa = PBXBuildFile; fileRef = EF1BBA1221F290F20021B5B3 /* lightM_02.caf */; };
+		EF1BBA1921F290F30021B5B3 /* lightM_03.caf in Resources */ = {isa = PBXBuildFile; fileRef = EF1BBA1321F290F20021B5B3 /* lightM_03.caf */; };
+		EF1BBA1A21F290F30021B5B3 /* lightM_01.caf in Resources */ = {isa = PBXBuildFile; fileRef = EF1BBA1421F290F20021B5B3 /* lightM_01.caf */; };
+		EF1BBA1B21F290F30021B5B3 /* hotM_02.caf in Resources */ = {isa = PBXBuildFile; fileRef = EF1BBA1521F290F20021B5B3 /* hotM_02.caf */; };
+		EF1BBA1C21F290F30021B5B3 /* hotM_01.caf in Resources */ = {isa = PBXBuildFile; fileRef = EF1BBA1621F290F20021B5B3 /* hotM_01.caf */; };
+		EF1BBA4A21F291100021B5B3 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA2321F291100021B5B3 /* YYDiskCache.m */; };
+		EF1BBA4B21F291100021B5B3 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA2521F291100021B5B3 /* YYCache.m */; };
+		EF1BBA4C21F291100021B5B3 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA2921F291100021B5B3 /* YYKVStorage.m */; };
+		EF1BBA4D21F291100021B5B3 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA2A21F291100021B5B3 /* YYMemoryCache.m */; };
+		EF1BBA4E21F291100021B5B3 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA2E21F291100021B5B3 /* NSObject+YYModel.m */; };
+		EF1BBA4F21F291100021B5B3 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA2F21F291100021B5B3 /* YYClassInfo.m */; };
+		EF1BBA5021F291100021B5B3 /* UIControl+ORIBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA3221F291100021B5B3 /* UIControl+ORIBProperty.m */; };
+		EF1BBA5121F291100021B5B3 /* UICollectionViewFlowLayout+ORIBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA3421F291100021B5B3 /* UICollectionViewFlowLayout+ORIBProperty.m */; };
+		EF1BBA5221F291100021B5B3 /* UILabel+ORIBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA3C21F291100021B5B3 /* UILabel+ORIBProperty.m */; };
+		EF1BBA5321F291100021B5B3 /* UITextField+ORIBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA3F21F291100021B5B3 /* UITextField+ORIBProperty.m */; };
+		EF1BBA5421F291100021B5B3 /* UIView+ORIBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA4121F291100021B5B3 /* UIView+ORIBProperty.m */; };
+		EF1BBA5521F291100021B5B3 /* UIImageView+ORIBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA4221F291100021B5B3 /* UIImageView+ORIBProperty.m */; };
+		EF1BBA5621F291100021B5B3 /* NSLayoutConstraint+ORIBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA4321F291100021B5B3 /* NSLayoutConstraint+ORIBProperty.m */; };
+		EF1BBA5721F291100021B5B3 /* UIButton+ORIBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA4421F291100021B5B3 /* UIButton+ORIBProperty.m */; };
+		EF1BBA5821F291100021B5B3 /* NSObject+ORIBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA4521F291100021B5B3 /* NSObject+ORIBProperty.m */; };
+		EF1BBA5921F291100021B5B3 /* UITextView+ORIBProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA4621F291100021B5B3 /* UITextView+ORIBProperty.m */; };
+		EF1BBA5A21F291100021B5B3 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA4921F291100021B5B3 /* Aspects.m */; };
+		EF1BBA6521F291760021B5B3 /* AlarmClockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBA6421F291760021B5B3 /* AlarmClockCell.m */; };
+		EF1BBAB821F293420021B5B3 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1BBAB721F293420021B5B3 /* First.storyboard */; };
+		EF1BBAC521F293510021B5B3 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBAB921F2934D0021B5B3 /* BaseTableViewController.m */; };
+		EF1BBAC621F293510021B5B3 /* AddClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBABB21F2934E0021B5B3 /* AddClockViewController.m */; };
+		EF1BBAC721F293510021B5B3 /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBABD21F2934E0021B5B3 /* LabelViewController.m */; };
+		EF1BBAC821F293510021B5B3 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBABE21F2934F0021B5B3 /* MusicViewController.m */; };
+		EF1BBAC921F293510021B5B3 /* RepeatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBAC021F293500021B5B3 /* RepeatViewController.m */; };
+		EF1BBACA21F293510021B5B3 /* ClockViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBAC321F293500021B5B3 /* ClockViewModel.m */; };
+		EF1BBACD21F293680021B5B3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBACB21F293670021B5B3 /* HomeViewController.m */; };
+		EF1BBAD121F297A90021B5B3 /* UNNotificationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBAD021F297A90021B5B3 /* UNNotificationsManager.m */; };
+		EF1BBAD421F298040021B5B3 /* ClockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1BBAD321F298040021B5B3 /* ClockModel.m */; };
 		EF585F3721F1A52900B94DA4 /* CellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF585F3621F1A52900B94DA4 /* CellHeaderView.m */; };
 		EF585F3921F1A53800B94DA4 /* CellHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF585F3821F1A53800B94DA4 /* CellHeaderView.xib */; };
 		EF585F3C21F1AD9600B94DA4 /* RollingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF585F3B21F1AD9600B94DA4 /* RollingCell.m */; };
@@ -366,6 +400,69 @@
 		EF0423D721EF1F87008A8FF9 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		EF0423D821EF1F87008A8FF9 /* SDWebImageWebPCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageWebPCoder.m; sourceTree = "<group>"; };
 		EF0423D921EF1F87008A8FF9 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		EF1BBA1121F290F20021B5B3 /* lightM_04.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lightM_04.caf; sourceTree = "<group>"; };
+		EF1BBA1221F290F20021B5B3 /* lightM_02.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lightM_02.caf; sourceTree = "<group>"; };
+		EF1BBA1321F290F20021B5B3 /* lightM_03.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lightM_03.caf; sourceTree = "<group>"; };
+		EF1BBA1421F290F20021B5B3 /* lightM_01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lightM_01.caf; sourceTree = "<group>"; };
+		EF1BBA1521F290F20021B5B3 /* hotM_02.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hotM_02.caf; sourceTree = "<group>"; };
+		EF1BBA1621F290F20021B5B3 /* hotM_01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hotM_01.caf; sourceTree = "<group>"; };
+		EF1BBA2321F291100021B5B3 /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		EF1BBA2421F291100021B5B3 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		EF1BBA2521F291100021B5B3 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
+		EF1BBA2621F291100021B5B3 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		EF1BBA2721F291100021B5B3 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		EF1BBA2821F291100021B5B3 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		EF1BBA2921F291100021B5B3 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
+		EF1BBA2A21F291100021B5B3 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
+		EF1BBA2C21F291100021B5B3 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		EF1BBA2D21F291100021B5B3 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		EF1BBA2E21F291100021B5B3 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		EF1BBA2F21F291100021B5B3 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		EF1BBA3021F291100021B5B3 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		EF1BBA3221F291100021B5B3 /* UIControl+ORIBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ORIBProperty.m"; sourceTree = "<group>"; };
+		EF1BBA3321F291100021B5B3 /* UITextField+ORIBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ORIBProperty.h"; sourceTree = "<group>"; };
+		EF1BBA3421F291100021B5B3 /* UICollectionViewFlowLayout+ORIBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewFlowLayout+ORIBProperty.m"; sourceTree = "<group>"; };
+		EF1BBA3521F291100021B5B3 /* UILabel+ORIBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ORIBProperty.h"; sourceTree = "<group>"; };
+		EF1BBA3621F291100021B5B3 /* UIView+ORIBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ORIBProperty.h"; sourceTree = "<group>"; };
+		EF1BBA3721F291100021B5B3 /* UIButton+ORIBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ORIBProperty.h"; sourceTree = "<group>"; };
+		EF1BBA3821F291100021B5B3 /* NSLayoutConstraint+ORIBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+ORIBProperty.h"; sourceTree = "<group>"; };
+		EF1BBA3921F291100021B5B3 /* UIImageView+ORIBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ORIBProperty.h"; sourceTree = "<group>"; };
+		EF1BBA3A21F291100021B5B3 /* UITextView+ORIBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+ORIBProperty.h"; sourceTree = "<group>"; };
+		EF1BBA3B21F291100021B5B3 /* NSObject+ORIBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ORIBProperty.h"; sourceTree = "<group>"; };
+		EF1BBA3C21F291100021B5B3 /* UILabel+ORIBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ORIBProperty.m"; sourceTree = "<group>"; };
+		EF1BBA3D21F291100021B5B3 /* UICollectionViewFlowLayout+ORIBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewFlowLayout+ORIBProperty.h"; sourceTree = "<group>"; };
+		EF1BBA3E21F291100021B5B3 /* ORIBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORIBProperty.h; sourceTree = "<group>"; };
+		EF1BBA3F21F291100021B5B3 /* UITextField+ORIBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ORIBProperty.m"; sourceTree = "<group>"; };
+		EF1BBA4021F291100021B5B3 /* UIControl+ORIBProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+ORIBProperty.h"; sourceTree = "<group>"; };
+		EF1BBA4121F291100021B5B3 /* UIView+ORIBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ORIBProperty.m"; sourceTree = "<group>"; };
+		EF1BBA4221F291100021B5B3 /* UIImageView+ORIBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ORIBProperty.m"; sourceTree = "<group>"; };
+		EF1BBA4321F291100021B5B3 /* NSLayoutConstraint+ORIBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+ORIBProperty.m"; sourceTree = "<group>"; };
+		EF1BBA4421F291100021B5B3 /* UIButton+ORIBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ORIBProperty.m"; sourceTree = "<group>"; };
+		EF1BBA4521F291100021B5B3 /* NSObject+ORIBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ORIBProperty.m"; sourceTree = "<group>"; };
+		EF1BBA4621F291100021B5B3 /* UITextView+ORIBProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ORIBProperty.m"; sourceTree = "<group>"; };
+		EF1BBA4821F291100021B5B3 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		EF1BBA4921F291100021B5B3 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		EF1BBA6321F291760021B5B3 /* AlarmClockCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmClockCell.h; sourceTree = "<group>"; };
+		EF1BBA6421F291760021B5B3 /* AlarmClockCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmClockCell.m; sourceTree = "<group>"; };
+		EF1BBAB721F293420021B5B3 /* First.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
+		EF1BBAB921F2934D0021B5B3 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		EF1BBABA21F2934D0021B5B3 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		EF1BBABB21F2934E0021B5B3 /* AddClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddClockViewController.m; sourceTree = "<group>"; };
+		EF1BBABC21F2934E0021B5B3 /* ClockViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewModel.h; sourceTree = "<group>"; };
+		EF1BBABD21F2934E0021B5B3 /* LabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
+		EF1BBABE21F2934F0021B5B3 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		EF1BBABF21F2934F0021B5B3 /* RepeatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatViewController.h; sourceTree = "<group>"; };
+		EF1BBAC021F293500021B5B3 /* RepeatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepeatViewController.m; sourceTree = "<group>"; };
+		EF1BBAC121F293500021B5B3 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		EF1BBAC221F293500021B5B3 /* LabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
+		EF1BBAC321F293500021B5B3 /* ClockViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewModel.m; sourceTree = "<group>"; };
+		EF1BBAC421F293500021B5B3 /* AddClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddClockViewController.h; sourceTree = "<group>"; };
+		EF1BBACB21F293670021B5B3 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		EF1BBACC21F293680021B5B3 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EF1BBACF21F297A90021B5B3 /* UNNotificationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNNotificationsManager.h; sourceTree = "<group>"; };
+		EF1BBAD021F297A90021B5B3 /* UNNotificationsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNNotificationsManager.m; sourceTree = "<group>"; };
+		EF1BBAD221F298040021B5B3 /* ClockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockModel.h; sourceTree = "<group>"; };
+		EF1BBAD321F298040021B5B3 /* ClockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockModel.m; sourceTree = "<group>"; };
 		EF585F3521F1A52900B94DA4 /* CellHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellHeaderView.h; sourceTree = "<group>"; };
 		EF585F3621F1A52900B94DA4 /* CellHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellHeaderView.m; sourceTree = "<group>"; };
 		EF585F3821F1A53800B94DA4 /* CellHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellHeaderView.xib; sourceTree = "<group>"; };
@@ -481,6 +578,7 @@
 		EF04226A21EDF072008A8FF9 /* YouYou */ = {
 			isa = PBXGroup;
 			children = (
+				EF1BBA1021F290F20021B5B3 /* resource */,
 				EF585F4A21F1F96300B94DA4 /* Details */,
 				EF04232221EF1F86008A8FF9 /* ThirdParty */,
 				EF0422B721EF058B008A8FF9 /* Common */,
@@ -580,8 +678,26 @@
 		EF0422AF21EDF4E1008A8FF9 /* Remind */ = {
 			isa = PBXGroup;
 			children = (
+				EF1BBACE21F297A90021B5B3 /* UNNotificationsManager */,
+				EF1BBACC21F293680021B5B3 /* HomeViewController.h */,
+				EF1BBACB21F293670021B5B3 /* HomeViewController.m */,
+				EF1BBAC421F293500021B5B3 /* AddClockViewController.h */,
+				EF1BBABB21F2934E0021B5B3 /* AddClockViewController.m */,
+				EF1BBABA21F2934D0021B5B3 /* BaseTableViewController.h */,
+				EF1BBAB921F2934D0021B5B3 /* BaseTableViewController.m */,
+				EF1BBABC21F2934E0021B5B3 /* ClockViewModel.h */,
+				EF1BBAC321F293500021B5B3 /* ClockViewModel.m */,
+				EF1BBAC221F293500021B5B3 /* LabelViewController.h */,
+				EF1BBABD21F2934E0021B5B3 /* LabelViewController.m */,
+				EF1BBAC121F293500021B5B3 /* MusicViewController.h */,
+				EF1BBABE21F2934F0021B5B3 /* MusicViewController.m */,
+				EF1BBABF21F2934F0021B5B3 /* RepeatViewController.h */,
+				EF1BBAC021F293500021B5B3 /* RepeatViewController.m */,
+				EF1BBA6221F291760021B5B3 /* View */,
 				EF0422B021EDF4ED008A8FF9 /* RemindViewController.h */,
 				EF0422B121EDF4ED008A8FF9 /* RemindViewController.m */,
+				EF1BBAD221F298040021B5B3 /* ClockModel.h */,
+				EF1BBAD321F298040021B5B3 /* ClockModel.m */,
 			);
 			path = Remind;
 			sourceTree = "<group>";
@@ -626,6 +742,7 @@
 		EF04232221EF1F86008A8FF9 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				EF1BBA2121F291100021B5B3 /* Lib */,
 				EF04232321EF1F86008A8FF9 /* MJExtension */,
 				EF04233921EF1F86008A8FF9 /* MJRefresh */,
 				EF04236821EF1F87008A8FF9 /* SVProgressHUD */,
@@ -904,6 +1021,113 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		EF1BBA1021F290F20021B5B3 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				EF1BBA1121F290F20021B5B3 /* lightM_04.caf */,
+				EF1BBA1221F290F20021B5B3 /* lightM_02.caf */,
+				EF1BBA1321F290F20021B5B3 /* lightM_03.caf */,
+				EF1BBA1421F290F20021B5B3 /* lightM_01.caf */,
+				EF1BBA1521F290F20021B5B3 /* hotM_02.caf */,
+				EF1BBA1621F290F20021B5B3 /* hotM_01.caf */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		EF1BBA2121F291100021B5B3 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				EF1BBA2221F291100021B5B3 /* YYCache */,
+				EF1BBA2B21F291100021B5B3 /* YYModel */,
+				EF1BBA3121F291100021B5B3 /* IBProperty */,
+				EF1BBA4721F291100021B5B3 /* Aspects */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		EF1BBA2221F291100021B5B3 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				EF1BBA2321F291100021B5B3 /* YYDiskCache.m */,
+				EF1BBA2421F291100021B5B3 /* YYKVStorage.h */,
+				EF1BBA2521F291100021B5B3 /* YYCache.m */,
+				EF1BBA2621F291100021B5B3 /* YYMemoryCache.h */,
+				EF1BBA2721F291100021B5B3 /* YYDiskCache.h */,
+				EF1BBA2821F291100021B5B3 /* YYCache.h */,
+				EF1BBA2921F291100021B5B3 /* YYKVStorage.m */,
+				EF1BBA2A21F291100021B5B3 /* YYMemoryCache.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
+		EF1BBA2B21F291100021B5B3 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF1BBA2C21F291100021B5B3 /* YYClassInfo.h */,
+				EF1BBA2D21F291100021B5B3 /* YYModel.h */,
+				EF1BBA2E21F291100021B5B3 /* NSObject+YYModel.m */,
+				EF1BBA2F21F291100021B5B3 /* YYClassInfo.m */,
+				EF1BBA3021F291100021B5B3 /* NSObject+YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		EF1BBA3121F291100021B5B3 /* IBProperty */ = {
+			isa = PBXGroup;
+			children = (
+				EF1BBA3221F291100021B5B3 /* UIControl+ORIBProperty.m */,
+				EF1BBA3321F291100021B5B3 /* UITextField+ORIBProperty.h */,
+				EF1BBA3421F291100021B5B3 /* UICollectionViewFlowLayout+ORIBProperty.m */,
+				EF1BBA3521F291100021B5B3 /* UILabel+ORIBProperty.h */,
+				EF1BBA3621F291100021B5B3 /* UIView+ORIBProperty.h */,
+				EF1BBA3721F291100021B5B3 /* UIButton+ORIBProperty.h */,
+				EF1BBA3821F291100021B5B3 /* NSLayoutConstraint+ORIBProperty.h */,
+				EF1BBA3921F291100021B5B3 /* UIImageView+ORIBProperty.h */,
+				EF1BBA3A21F291100021B5B3 /* UITextView+ORIBProperty.h */,
+				EF1BBA3B21F291100021B5B3 /* NSObject+ORIBProperty.h */,
+				EF1BBA3C21F291100021B5B3 /* UILabel+ORIBProperty.m */,
+				EF1BBA3D21F291100021B5B3 /* UICollectionViewFlowLayout+ORIBProperty.h */,
+				EF1BBA3E21F291100021B5B3 /* ORIBProperty.h */,
+				EF1BBA3F21F291100021B5B3 /* UITextField+ORIBProperty.m */,
+				EF1BBA4021F291100021B5B3 /* UIControl+ORIBProperty.h */,
+				EF1BBA4121F291100021B5B3 /* UIView+ORIBProperty.m */,
+				EF1BBA4221F291100021B5B3 /* UIImageView+ORIBProperty.m */,
+				EF1BBA4321F291100021B5B3 /* NSLayoutConstraint+ORIBProperty.m */,
+				EF1BBA4421F291100021B5B3 /* UIButton+ORIBProperty.m */,
+				EF1BBA4521F291100021B5B3 /* NSObject+ORIBProperty.m */,
+				EF1BBA4621F291100021B5B3 /* UITextView+ORIBProperty.m */,
+			);
+			path = IBProperty;
+			sourceTree = "<group>";
+		};
+		EF1BBA4721F291100021B5B3 /* Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				EF1BBA4821F291100021B5B3 /* Aspects.h */,
+				EF1BBA4921F291100021B5B3 /* Aspects.m */,
+			);
+			path = Aspects;
+			sourceTree = "<group>";
+		};
+		EF1BBA6221F291760021B5B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF1BBAB721F293420021B5B3 /* First.storyboard */,
+				EF1BBA6321F291760021B5B3 /* AlarmClockCell.h */,
+				EF1BBA6421F291760021B5B3 /* AlarmClockCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF1BBACE21F297A90021B5B3 /* UNNotificationsManager */ = {
+			isa = PBXGroup;
+			children = (
+				EF1BBACF21F297A90021B5B3 /* UNNotificationsManager.h */,
+				EF1BBAD021F297A90021B5B3 /* UNNotificationsManager.m */,
+			);
+			path = UNNotificationsManager;
+			sourceTree = "<group>";
+		};
 		EF585F3421F1A4F600B94DA4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -1060,19 +1284,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1BBA1A21F290F30021B5B3 /* lightM_01.caf in Resources */,
 				EF0423FC21EF1F88008A8FF9 /* SVProgressHUD.bundle in Resources */,
 				EF04227B21EDF079008A8FF9 /* LaunchScreen.storyboard in Resources */,
 				EF834E1E21F22F6800157BA9 /* DetailsTableViewCell.xib in Resources */,
+				EF1BBA1821F290F30021B5B3 /* lightM_02.caf in Resources */,
+				EF1BBA1C21F290F30021B5B3 /* hotM_01.caf in Resources */,
 				EF0422BE21EF19C9008A8FF9 /* api in Resources */,
 				EF0423E621EF1F88008A8FF9 /* MJRefresh.bundle in Resources */,
 				EF585F4621F1E56500B94DA4 /* ListTableViewCell.xib in Resources */,
 				EF585F4121F1C79300B94DA4 /* RollingCollectionViewCell.xib in Resources */,
 				EF713E7021F26317003793C7 /* WJPlayingViewController.xib in Resources */,
 				EF04227821EDF079008A8FF9 /* Assets.xcassets in Resources */,
+				EF1BBA1721F290F30021B5B3 /* lightM_04.caf in Resources */,
 				EF834E1921F225DE00157BA9 /* DetailsHeardView.xib in Resources */,
+				EF1BBA1921F290F30021B5B3 /* lightM_03.caf in Resources */,
 				EF04227321EDF072008A8FF9 /* Main.storyboard in Resources */,
 				EF585F3921F1A53800B94DA4 /* CellHeaderView.xib in Resources */,
+				EF1BBA1B21F290F30021B5B3 /* hotM_02.caf in Resources */,
 				EF585F5021F1F9C900B94DA4 /* DetailsNavgationView.xib in Resources */,
+				EF1BBAB821F293420021B5B3 /* First.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1106,10 +1337,12 @@
 				EF0423FF21EF1F88008A8FF9 /* AFURLConnectionOperation.m in Sources */,
 				EF0423DE21EF1F88008A8FF9 /* MJExtensionConst.m in Sources */,
 				EF04240821EF1F88008A8FF9 /* UIRefreshControl+AFNetworking.m in Sources */,
+				EF1BBA4E21F291100021B5B3 /* NSObject+YYModel.m in Sources */,
 				EF0423EE21EF1F88008A8FF9 /* MJRefreshAutoGifFooter.m in Sources */,
 				EF0423FD21EF1F88008A8FF9 /* AFURLResponseSerialization.m in Sources */,
 				EF04240921EF1F88008A8FF9 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				EF0423F721EF1F88008A8FF9 /* MJRefreshComponent.m in Sources */,
+				EF1BBA4D21F291100021B5B3 /* YYMemoryCache.m in Sources */,
 				EF04241821EF1F88008A8FF9 /* UIImage+GIF.m in Sources */,
 				EF585F4921F1F15E00B94DA4 /* HotListViewController.m in Sources */,
 				EF0423EA21EF1F88008A8FF9 /* MJRefreshBackGifFooter.m in Sources */,
@@ -1118,29 +1351,39 @@
 				EF834E1D21F22F6800157BA9 /* DetailsTableViewCell.m in Sources */,
 				EF0423ED21EF1F88008A8FF9 /* MJRefreshAutoStateFooter.m in Sources */,
 				EF04240C21EF1F88008A8FF9 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				EF1BBA5A21F291100021B5B3 /* Aspects.m in Sources */,
 				EF0423F921EF1F88008A8FF9 /* SVProgressAnimatedView.m in Sources */,
 				EF0423EB21EF1F88008A8FF9 /* MJRefreshBackStateFooter.m in Sources */,
+				EF1BBACA21F293510021B5B3 /* ClockViewModel.m in Sources */,
 				EF04241621EF1F88008A8FF9 /* SDWebImageCodersManager.m in Sources */,
 				EF0423E121EF1F88008A8FF9 /* NSString+MJExtension.m in Sources */,
 				EFC8E45C21EF3BA1007D5117 /* DataManager.m in Sources */,
 				EF04240121EF1F88008A8FF9 /* AFHTTPRequestOperationManager.m in Sources */,
+				EF1BBA4A21F291100021B5B3 /* YYDiskCache.m in Sources */,
 				EF04240621EF1F88008A8FF9 /* UIAlertView+AFNetworking.m in Sources */,
 				EF04241F21EF1F88008A8FF9 /* SDAnimatedImageRep.m in Sources */,
 				EF04242A21EF1F88008A8FF9 /* SDWebImageImageIOCoder.m in Sources */,
 				EF713E7621F263B7003793C7 /* WJMusicTool.m in Sources */,
+				EF1BBAC921F293510021B5B3 /* RepeatViewController.m in Sources */,
 				EF0422AE21EDF4B4008A8FF9 /* ClassifyViewController.m in Sources */,
 				EFC8E46B21F023FD007D5117 /* Album.m in Sources */,
 				EF0423EC21EF1F88008A8FF9 /* MJRefreshBackNormalFooter.m in Sources */,
+				EF1BBA4B21F291100021B5B3 /* YYCache.m in Sources */,
 				EF04242B21EF1F88008A8FF9 /* UIButton+WebCache.m in Sources */,
+				EF1BBAC621F293510021B5B3 /* AddClockViewController.m in Sources */,
 				EF04240721EF1F88008A8FF9 /* UIProgressView+AFNetworking.m in Sources */,
 				EF04241C21EF1F88008A8FF9 /* SDWebImagePrefetcher.m in Sources */,
 				EF0423DB21EF1F88008A8FF9 /* NSObject+MJKeyValue.m in Sources */,
+				EF1BBA5621F291100021B5B3 /* NSLayoutConstraint+ORIBProperty.m in Sources */,
 				EF0422B221EDF4ED008A8FF9 /* RemindViewController.m in Sources */,
 				EFC8E46521F02062007D5117 /* Tag.m in Sources */,
+				EF1BBAC821F293510021B5B3 /* MusicViewController.m in Sources */,
 				EF04242621EF1F88008A8FF9 /* SDWebImageGIFCoder.m in Sources */,
 				EF04242921EF1F88008A8FF9 /* UIView+WebCache.m in Sources */,
 				EF713E7321F263A9003793C7 /* UIView+AdjustFrame.m in Sources */,
 				EFC8E46821F022DB007D5117 /* CategoryContent.m in Sources */,
+				EF1BBA5921F291100021B5B3 /* UITextView+ORIBProperty.m in Sources */,
+				EF1BBA5321F291100021B5B3 /* UITextField+ORIBProperty.m in Sources */,
 				EF04240B21EF1F88008A8FF9 /* UIButton+AFNetworking.m in Sources */,
 				EF04242221EF1F88008A8FF9 /* SDWebImageTransition.m in Sources */,
 				EF04242C21EF1F88008A8FF9 /* SDWebImageWebPCoder.m in Sources */,
@@ -1153,10 +1396,12 @@
 				EF0423E321EF1F88008A8FF9 /* MJFoundation.m in Sources */,
 				EF0422AA21EDF470008A8FF9 /* IndexViewController.m in Sources */,
 				EF0423EF21EF1F88008A8FF9 /* MJRefreshAutoNormalFooter.m in Sources */,
+				EF1BBA5421F291100021B5B3 /* UIView+ORIBProperty.m in Sources */,
 				EF585F3C21F1AD9600B94DA4 /* RollingCell.m in Sources */,
 				EF04242021EF1F88008A8FF9 /* SDImageCache.m in Sources */,
 				EF585F4521F1E56500B94DA4 /* ListTableViewCell.m in Sources */,
 				EFC8E46221F01E14007D5117 /* YYData.m in Sources */,
+				EF1BBAC521F293510021B5B3 /* BaseTableViewController.m in Sources */,
 				EF713E7C21F263D4003793C7 /* WJAudioTool.m in Sources */,
 				EF0422A621EDF39A008A8FF9 /* BaseViewController.m in Sources */,
 				EF04240E21EF1F88008A8FF9 /* MBProgressHUD.m in Sources */,
@@ -1169,18 +1414,24 @@
 				EF585F4E21F1F9BD00B94DA4 /* DetailsNavgationView.m in Sources */,
 				EF04242721EF1F88008A8FF9 /* SDImageCacheConfig.m in Sources */,
 				EF713E8B21F264A3003793C7 /* UIImage+BoxBlur.m in Sources */,
+				EF1BBA5521F291100021B5B3 /* UIImageView+ORIBProperty.m in Sources */,
 				EF713E8221F26437003793C7 /* WJLrcCell.m in Sources */,
 				EF713E6F21F26317003793C7 /* WJPlayingViewController.m in Sources */,
 				EF713E8521F26455003793C7 /* WJLrcline.m in Sources */,
 				EF713E7921F263C8003793C7 /* WJMusic.m in Sources */,
+				EF1BBAD421F298040021B5B3 /* ClockModel.m in Sources */,
 				EF04241A21EF1F88008A8FF9 /* SDWebImageCoderHelper.m in Sources */,
+				EF1BBA5221F291100021B5B3 /* UILabel+ORIBProperty.m in Sources */,
 				EF04242121EF1F88008A8FF9 /* SDWebImageDownloaderOperation.m in Sources */,
+				EF1BBA4C21F291100021B5B3 /* YYKVStorage.m in Sources */,
 				EF0423F521EF1F88008A8FF9 /* MJRefreshBackFooter.m in Sources */,
 				EF04242421EF1F88008A8FF9 /* UIImageView+WebCache.m in Sources */,
 				EF0423DD21EF1F88008A8FF9 /* NSObject+MJCoding.m in Sources */,
 				EF04240321EF1F88008A8FF9 /* AFHTTPRequestOperation.m in Sources */,
+				EF1BBA5721F291100021B5B3 /* UIButton+ORIBProperty.m in Sources */,
 				EF04241721EF1F88008A8FF9 /* SDWebImageDownloader.m in Sources */,
 				EF04242321EF1F88008A8FF9 /* NSData+ImageContentType.m in Sources */,
+				EF1BBA5121F291100021B5B3 /* UICollectionViewFlowLayout+ORIBProperty.m in Sources */,
 				EF04242821EF1F88008A8FF9 /* UIView+WebCacheOperation.m in Sources */,
 				EF0423F421EF1F88008A8FF9 /* MJRefreshHeader.m in Sources */,
 				EF04241321EF1F88008A8FF9 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1194,16 +1445,23 @@
 				EF04241221EF1F88008A8FF9 /* SDWebImageManager.m in Sources */,
 				EF0423F621EF1F88008A8FF9 /* MJRefreshAutoFooter.m in Sources */,
 				EF04240021EF1F88008A8FF9 /* AFURLSessionManager.m in Sources */,
+				EF1BBA5821F291100021B5B3 /* NSObject+ORIBProperty.m in Sources */,
 				EF04227021EDF072008A8FF9 /* ViewController.m in Sources */,
 				EF04241021EF1F88008A8FF9 /* UIImage+WebP.m in Sources */,
 				EF04227E21EDF079008A8FF9 /* main.m in Sources */,
 				EF713E8821F2647D003793C7 /* DRNRealTimeBlurView.m in Sources */,
+				EF1BBA4F21F291100021B5B3 /* YYClassInfo.m in Sources */,
 				EF04226D21EDF072008A8FF9 /* AppDelegate.m in Sources */,
+				EF1BBAD121F297A90021B5B3 /* UNNotificationsManager.m in Sources */,
+				EF1BBA6521F291760021B5B3 /* AlarmClockCell.m in Sources */,
 				EF04240221EF1F88008A8FF9 /* AFURLRequestSerialization.m in Sources */,
+				EF1BBA5021F291100021B5B3 /* UIControl+ORIBProperty.m in Sources */,
 				EF834E1121F21EE000157BA9 /* DetailsModel.m in Sources */,
 				EF0423F221EF1F88008A8FF9 /* MJRefreshGifHeader.m in Sources */,
 				EF0423E721EF1F88008A8FF9 /* UIScrollView+MJExtension.m in Sources */,
+				EF1BBACD21F293680021B5B3 /* HomeViewController.m in Sources */,
 				EF0423E421EF1F88008A8FF9 /* UIScrollView+MJRefresh.m in Sources */,
+				EF1BBAC721F293510021B5B3 /* LabelViewController.m in Sources */,
 				EF0422BA21EF06EF008A8FF9 /* YYPlayManager.m in Sources */,
 				EF0423DF21EF1F88008A8FF9 /* NSObject+MJProperty.m in Sources */,
 				EF834E0E21F1FF0E00157BA9 /* DetailsViewController.m in Sources */,
